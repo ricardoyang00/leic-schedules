@@ -1,0 +1,6 @@
+<map id="System" name="System">
+<area shape="rect" id="node1" title="A class representing the system and its operations." alt="" coords="19,276,89,303"/>
+<area shape="rect" id="node2" href="$classStudentBST.html" title="A class to represent the Binary search tree to store &#39;Student&#39; objects." alt="" coords="5,187,103,213"/>
+<area shape="rect" id="node3" href="$structNode.html" title="A structure representing a binary tree node containing Student data." alt="" coords="26,96,82,123"/>
+<area shape="rect" id="node4" href="$classStudent.html" title="A class to represent a student." alt="" coords="18,5,90,32"/>
+</map>

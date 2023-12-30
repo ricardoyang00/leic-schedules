@@ -64,6 +64,7 @@ $(function() {
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
 <a href="classConsult-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">Consult Class Reference</div>  </div>
@@ -78,6 +79,13 @@ $(function() {
 Collaboration diagram for Consult:</div>
 <div class="dyncontent">
 <div class="center"><img src="classConsult__coll__graph.png" border="0" usemap="#aConsult_coll__map" alt="Collaboration graph"/></div>
+<map name="aConsult_coll__map" id="aConsult_coll__map">
+<area shape="rect" title="A class for consulting Student and Class data." alt="" coords="19,365,89,392"/>
+<area shape="rect" href="structGlobal.html" title="A structure to hold Global data for the application." alt="" coords="22,276,86,303"/>
+<area shape="rect" href="classStudentBST.html" title="A class to represent the Binary search tree to store &#39;Student&#39; objects." alt="" coords="5,187,103,213"/>
+<area shape="rect" href="structNode.html" title="A structure representing a binary tree node containing Student data." alt="" coords="26,96,82,123"/>
+<area shape="rect" href="classStudent.html" title="A class to represent a student." alt="" coords="18,5,90,32"/>
+</map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
@@ -151,6 +159,12 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:a0228822d0f951122119b915682226ad6"><td class="memItemLeft" align="right" valign="top"><a id="a0228822d0f951122119b915682226ad6"></a>
 <a class="el" href="structGlobal.html">Global</a>&#160;</td><td class="memItemRight" valign="bottom"><b>globalData</b></td></tr>
 <tr class="separator:a0228822d0f951122119b915682226ad6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:a6c6ff079d2d36c6ad496d456247d2cb1"><td class="memItemLeft" align="right" valign="top">set&lt; string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classConsult.html#a6c6ff079d2d36c6ad496d456247d2cb1">ucsOfTheYear</a> (int year)</td></tr>
+<tr class="memdesc:a6c6ff079d2d36c6ad496d456247d2cb1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves a set of UCs for a given year.  <a href="classConsult.html#a6c6ff079d2d36c6ad496d456247d2cb1">More...</a><br /></td></tr>
+<tr class="separator:a6c6ff079d2d36c6ad496d456247d2cb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A class for consulting <a class="el" href="classStudent.html" title="A class to represent a student.">Student</a> and <a class="el" href="classClass.html" title="A class to represent a course Class.">Class</a> data. </p>
@@ -661,6 +675,49 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="a6c6ff079d2d36c6ad496d456247d2cb1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6c6ff079d2d36c6ad496d456247d2cb1">&#9670;&nbsp;</a></span>ucsOfTheYear()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">set&lt; string &gt; Consult::ucsOfTheYear </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>year</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Retrieves a set of UCs for a given year. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">year</td><td>The year for which to retrieve UCs. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A set of UC codes for the specified year.</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">year</td><td>The year for which to retrieve UCs. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A set of UC codes for the specified year.</dd></dl>
+<p>@complexity O(N) </p>
+
+</div>
+</div>
 <a id="a60c71cb1e45be5db7414cb4aad119390"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a60c71cb1e45be5db7414cb4aad119390">&#9670;&nbsp;</a></span>updateData()</h2>
 
@@ -690,8 +747,8 @@ Public Attributes</h2></td></tr>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>/home/chill/Documents/AED2324_PRJ1_G110/code/<a class="el" href="Consult_8h_source.html">Consult.h</a></li>
-<li>/home/chill/Documents/AED2324_PRJ1_G110/code/<a class="el" href="Consult_8cpp.html">Consult.cpp</a></li>
+<li>code/<a class="el" href="Consult_8h_source.html">Consult.h</a></li>
+<li>code/<a class="el" href="Consult_8cpp.html">Consult.cpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

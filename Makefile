@@ -11,6 +11,7 @@ PROGRAMS = run
 DOXYGEN_CONFIG = docs/Doxyfile
 
 # Target directory for Doxygen documentation
+DOXYGEN_INPUT_DIR = docs
 DOXYGEN_OUTPUT_DIR = docs/output
 
 # Target for Doxygen documentation
@@ -23,8 +24,3 @@ run: $(COMMON_CPP_FILES) code/runscript.cpp
 
 doxygen: $(DOXYGEN_CONFIG)
 	doxygen $<
-
-clean:
-	rm -fr *.dSYM $(PROGRAMS)
-
-.PHONY: doxygen

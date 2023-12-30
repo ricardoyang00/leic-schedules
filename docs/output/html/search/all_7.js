@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['joinucandclass_53',['joinUCAndClass',['../classChange.html#a31eaa9fb54db0125225cdcbf0d92c566',1,'Change']]],
-  ['joinucclassrequest_54',['JoinUcClassRequest',['../structJoinUcClassRequest.html',1,'']]]
+  ['inordertraversal_63',['inOrderTraversal',['../classStudentBST.html#adb7ba4fbb9532e95a26685d8cc8310ac',1,'StudentBST']]],
+  ['insertstudent_64',['insertStudent',['../classStudentBST.html#a914ea8ca167de4e7567e17779333a59a',1,'StudentBST::insertStudent(Node *root, const Student &amp;student)'],['../classStudentBST.html#a43fb76c2b83660b3687e8c9f09d90f65',1,'StudentBST::insertStudent(const int &amp;studentCode, const string &amp;studentName, vector&lt; Class &gt; ucToClasses)']]]
 ];

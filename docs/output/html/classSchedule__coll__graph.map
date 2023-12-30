@@ -1,0 +1,4 @@
+<map id="Schedule" name="Schedule">
+<area shape="rect" id="node1" title="A class to represent the schedule of a class for a course unit." alt="" coords="5,95,87,121"/>
+<area shape="rect" id="node2" href="$classClass.html" title="A class to represent a course Class." alt="" coords="17,5,75,32"/>
+</map>

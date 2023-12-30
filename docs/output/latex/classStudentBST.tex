@@ -9,6 +9,16 @@ A class to represent the Binary search tree to store \textquotesingle{}\mbox{\hy
 
 {\ttfamily \#include $<$Data.\+h$>$}
 
+
+
+Collaboration diagram for Student\+BST\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=179pt]{classStudentBST__coll__graph}
+\end{center}
+\end{figure}
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
@@ -40,6 +50,20 @@ int \mbox{\hyperlink{classStudentBST_a65f51e692916486994c8ceed2af91a29}{count\+S
 \begin{DoxyCompactList}\small\item\em Count the number of students in a specific academic year. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classStudentBST_a20d42af8b3368d83b5998e7e5221acee}{save\+To\+CSV}} (const string \&filename)
 \begin{DoxyCompactList}\small\item\em Save the student data to a CSV file. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structNode}{Node}} $\ast$ \mbox{\hyperlink{classStudentBST_a914ea8ca167de4e7567e17779333a59a}{insert\+Student}} (\mbox{\hyperlink{structNode}{Node}} $\ast$\mbox{\hyperlink{classStudentBST_a05f3af39191b70f799f630aea1078357}{root}}, const \mbox{\hyperlink{classStudent}{Student}} \&student)
+\begin{DoxyCompactList}\small\item\em Recursive method to insert a student into the BST. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classStudent}{Student}} $\ast$ \mbox{\hyperlink{classStudentBST_af2f75321026670956e0d88f5609caaf8}{search\+By\+Code}} (\mbox{\hyperlink{structNode}{Node}} $\ast$\mbox{\hyperlink{classStudentBST_a05f3af39191b70f799f630aea1078357}{root}}, const int \&student\+Code)
+\begin{DoxyCompactList}\small\item\em Recursively searches for a student with the specified \mbox{\hyperlink{classStudent}{Student}} Code in an in-\/order traversal of the binary search tree. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classStudentBST_adb7ba4fbb9532e95a26685d8cc8310ac}{in\+Order\+Traversal}} (\mbox{\hyperlink{structNode}{Node}} $\ast$node, function$<$ void(const \mbox{\hyperlink{classStudent}{Student}} \&)$>$ action)
+\begin{DoxyCompactList}\small\item\em In-\/order traversal of the BST with a custom action. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structNode}{Node}} $\ast$ \mbox{\hyperlink{classStudentBST_a05f3af39191b70f799f630aea1078357}{root}}
+\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
@@ -224,10 +248,38 @@ This function counts the number of students who are registered in all UCs for a 
 {\em uc\+Students\+Count} & A map to store the counts of students in each UC. \\
 \hline
 \end{DoxyParams}
+\mbox{\Hypertarget{classStudentBST_adb7ba4fbb9532e95a26685d8cc8310ac}\label{classStudentBST_adb7ba4fbb9532e95a26685d8cc8310ac}} 
+\index{StudentBST@{StudentBST}!inOrderTraversal@{inOrderTraversal}}
+\index{inOrderTraversal@{inOrderTraversal}!StudentBST@{StudentBST}}
+\doxysubsubsection{\texorpdfstring{inOrderTraversal()}{inOrderTraversal()}}
+{\footnotesize\ttfamily void Student\+BST\+::in\+Order\+Traversal (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structNode}{Node}} $\ast$}]{node,  }\item[{function$<$ void(const \mbox{\hyperlink{classStudent}{Student}} \&)$>$}]{action }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+In-\/order traversal of the BST with a custom action. 
+
+Perform an in-\/order traversal of the Binary Search Tree (BST) starting from the given node and execute a specified action for each node.
+
+
+\begin{DoxyParams}{Parameters}
+{\em node} & The current node being processed. \\
+\hline
+{\em action} & The action to perform on each \mbox{\hyperlink{classStudent}{Student}} object.\\
+\hline
+\end{DoxyParams}
+This function performs an in-\/order traversal of the BST, visiting nodes in ascending order. For each node, it executes the specified action.
+
+
+\begin{DoxyParams}{Parameters}
+{\em node} & The current node in the traversal. \\
+\hline
+{\em action} & The action to be executed for each node. \\
+\hline
+\end{DoxyParams}
 \mbox{\Hypertarget{classStudentBST_a43fb76c2b83660b3687e8c9f09d90f65}\label{classStudentBST_a43fb76c2b83660b3687e8c9f09d90f65}} 
 \index{StudentBST@{StudentBST}!insertStudent@{insertStudent}}
 \index{insertStudent@{insertStudent}!StudentBST@{StudentBST}}
-\doxysubsubsection{\texorpdfstring{insertStudent()}{insertStudent()}}
+\doxysubsubsection{\texorpdfstring{insertStudent()}{insertStudent()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
 {\footnotesize\ttfamily void Student\+BST\+::insert\+Student (\begin{DoxyParamCaption}\item[{const int \&}]{student\+Code,  }\item[{const string \&}]{student\+Name,  }\item[{vector$<$ \mbox{\hyperlink{classClass}{Class}} $>$}]{uc\+To\+Classes }\end{DoxyParamCaption})}
 
 
@@ -256,6 +308,40 @@ This function inserts a student into the BST using the Binary Search Tree proper
 {\em uc\+To\+Classes} & A vector of \mbox{\hyperlink{classClass}{Class}} objects representing the student\textquotesingle{}s classes. \\
 \hline
 \end{DoxyParams}
+\mbox{\Hypertarget{classStudentBST_a914ea8ca167de4e7567e17779333a59a}\label{classStudentBST_a914ea8ca167de4e7567e17779333a59a}} 
+\index{StudentBST@{StudentBST}!insertStudent@{insertStudent}}
+\index{insertStudent@{insertStudent}!StudentBST@{StudentBST}}
+\doxysubsubsection{\texorpdfstring{insertStudent()}{insertStudent()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structNode}{Node}} $\ast$ Student\+BST\+::insert\+Student (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structNode}{Node}} $\ast$}]{root,  }\item[{const \mbox{\hyperlink{classStudent}{Student}} \&}]{student }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Recursive method to insert a student into the BST. 
+
+Helper function to insert a student into the Binary Search Tree (BST).
+
+
+\begin{DoxyParams}{Parameters}
+{\em root} & The root of the subtree to insert the student into. \\
+\hline
+{\em student} & The \mbox{\hyperlink{classStudent}{Student}} object to insert. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The root of the updated subtree.
+\end{DoxyReturn}
+This recursive function inserts a new student into the BST by comparing the student\textquotesingle{}s data with the data in the current node. If the current node is null (the subtree is empty), it creates a new node with the given student and returns it. If the student data is less than the data in the current node, it recursively inserts the student into the left subtree. If the student data is greater, it recursively inserts the student into the right subtree.
+
+
+\begin{DoxyParams}{Parameters}
+{\em root} & The root node of the current subtree. \\
+\hline
+{\em student} & The \mbox{\hyperlink{classStudent}{Student}} object to insert into the BST. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The root of the updated subtree after insertion. 
+\end{DoxyReturn}
 \mbox{\Hypertarget{classStudentBST_a20d42af8b3368d83b5998e7e5221acee}\label{classStudentBST_a20d42af8b3368d83b5998e7e5221acee}} 
 \index{StudentBST@{StudentBST}!saveToCSV@{saveToCSV}}
 \index{saveToCSV@{saveToCSV}!StudentBST@{StudentBST}}
@@ -311,7 +397,7 @@ This function searches for students whose names contain the specified search str
 \mbox{\Hypertarget{classStudentBST_a8cb7afd9ae1753e51ffb368142c33283}\label{classStudentBST_a8cb7afd9ae1753e51ffb368142c33283}} 
 \index{StudentBST@{StudentBST}!searchByCode@{searchByCode}}
 \index{searchByCode@{searchByCode}!StudentBST@{StudentBST}}
-\doxysubsubsection{\texorpdfstring{searchByCode()}{searchByCode()}}
+\doxysubsubsection{\texorpdfstring{searchByCode()}{searchByCode()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
 {\footnotesize\ttfamily \mbox{\hyperlink{classStudent}{Student}} $\ast$ Student\+BST\+::search\+By\+Code (\begin{DoxyParamCaption}\item[{const int \&}]{student\+Code }\end{DoxyParamCaption})}
 
 
@@ -332,6 +418,42 @@ This function initiates the search for a student with the given student code by 
 
 
 \begin{DoxyParams}{Parameters}
+{\em student\+Code} & The student code to search for. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A pointer to the \mbox{\hyperlink{classStudent}{Student}} object if found, or nullptr if not found. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classStudentBST_af2f75321026670956e0d88f5609caaf8}\label{classStudentBST_af2f75321026670956e0d88f5609caaf8}} 
+\index{StudentBST@{StudentBST}!searchByCode@{searchByCode}}
+\index{searchByCode@{searchByCode}!StudentBST@{StudentBST}}
+\doxysubsubsection{\texorpdfstring{searchByCode()}{searchByCode()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classStudent}{Student}} $\ast$ Student\+BST\+::search\+By\+Code (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structNode}{Node}} $\ast$}]{root,  }\item[{const int \&}]{student\+Code }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Recursively searches for a student with the specified \mbox{\hyperlink{classStudent}{Student}} Code in an in-\/order traversal of the binary search tree. 
+
+Search for a student with a specific student code in the BST.
+
+This method performs an in-\/order traversal of the binary search tree (BST) and recursively searches for a student whose \mbox{\hyperlink{classStudent}{Student}} Code matches the given code.
+
+
+\begin{DoxyParams}{Parameters}
+{\em root} & Pointer to the root node of the BST to traverse. \\
+\hline
+{\em student\+Code} & The \mbox{\hyperlink{classStudent}{Student}} Code to search for. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A pointer to the \mbox{\hyperlink{classStudent}{Student}} object if found; otherwise, returns nullptr.
+\end{DoxyReturn}
+This function recursively searches the BST to find a student with the given student code.
+
+
+\begin{DoxyParams}{Parameters}
+{\em root} & The root of the current subtree. \\
+\hline
 {\em student\+Code} & The student code to search for. \\
 \hline
 \end{DoxyParams}
@@ -415,7 +537,16 @@ Set the root node of the BST.
 \end{DoxyParams}
 
 
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classStudentBST_a05f3af39191b70f799f630aea1078357}\label{classStudentBST_a05f3af39191b70f799f630aea1078357}} 
+\index{StudentBST@{StudentBST}!root@{root}}
+\index{root@{root}!StudentBST@{StudentBST}}
+\doxysubsubsection{\texorpdfstring{root}{root}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structNode}{Node}}$\ast$ Student\+BST\+::root\hspace{0.3cm}{\ttfamily [private]}}
+
+Pointer to the root of the BST. 
+
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-/home/chill/\+Documents/\+AED2324\+\_\+\+PRJ1\+\_\+\+G110/code/\mbox{\hyperlink{Data_8h}{Data.\+h}}\item 
-/home/chill/\+Documents/\+AED2324\+\_\+\+PRJ1\+\_\+\+G110/code/\mbox{\hyperlink{Data_8cpp}{Data.\+cpp}}\end{DoxyCompactItemize}
+code/\mbox{\hyperlink{Data_8h}{Data.\+h}}\item 
+code/\mbox{\hyperlink{Data_8cpp}{Data.\+cpp}}\end{DoxyCompactItemize}

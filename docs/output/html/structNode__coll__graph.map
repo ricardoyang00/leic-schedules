@@ -1,0 +1,4 @@
+<map id="Node" name="Node">
+<area shape="rect" id="node1" title="A structure representing a binary tree node containing Student data." alt="" coords="13,96,69,123"/>
+<area shape="rect" id="node2" href="$classStudent.html" title="A class to represent a student." alt="" coords="5,5,77,32"/>
+</map>

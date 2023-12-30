@@ -1,0 +1,9 @@
+<map id="code/Consult.h" name="code/Consult.h">
+<area shape="rect" id="node1" title="Header file containing class definitions for Consult." alt="" coords="157,5,275,32"/>
+<area shape="rect" id="node2" href="$Change_8h.html" title="Header file for the Change class." alt="" coords="59,80,178,107"/>
+<area shape="rect" id="node4" href="$Script_8h.html" title="Defines the Script class for interacting with the &quot;LEIC Schedules&quot; system." alt="" coords="163,155,269,181"/>
+<area shape="rect" id="node7" href="$Consult_8cpp.html" title="Implementation of the classes and functions defined in Consult.h." alt="" coords="253,80,387,107"/>
+<area shape="rect" id="node3" href="$Change_8cpp.html" title="Implementation of the Change class that handles student class and UC changes." alt="" coords="5,155,139,181"/>
+<area shape="rect" id="node5" href="$runscript_8cpp.html" title="A simple C++ program that initializes a Script instance and runs it." alt="" coords="68,229,209,256"/>
+<area shape="rect" id="node6" href="$Script_8cpp.html" title="Implementation of the Script class methods." alt="" coords="234,229,355,256"/>
+</map>

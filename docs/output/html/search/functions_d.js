@@ -1,6 +1,9 @@
 var searchData=
 [
-  ['tolower_231',['ToLower',['../UtilityFunctions_8cpp.html#ad907de0184dfbf7a3486d61e4988d0e5',1,'ToLower(const string &amp;input):&#160;UtilityFunctions.cpp'],['../UtilityFunctions_8h.html#ad907de0184dfbf7a3486d61e4988d0e5',1,'ToLower(const string &amp;input):&#160;UtilityFunctions.cpp']]],
-  ['trimstring_232',['TrimString',['../classReadData.html#a9c44c49996cc3e78cdafc3737ad60e6a',1,'ReadData']]],
-  ['trybuildnewschedule_233',['tryBuildNewSchedule',['../classChange.html#a53c9519cb57f8f1680c7096eab0a9e78',1,'Change']]]
+  ['readclasses_263',['ReadClasses',['../classReadData.html#a3c0a5d1af54c3e7d16151fcc522bb834',1,'ReadData']]],
+  ['readdata_264',['ReadData',['../classReadData.html#abdc3a24ea2bfab9690d0dd9fde90542e',1,'ReadData']]],
+  ['readschedules_265',['ReadSchedules',['../classReadData.html#a7174dafe631504a768f780484da4387f',1,'ReadData']]],
+  ['readstudents_266',['ReadStudents',['../classReadData.html#a16d3fa00c32b8d7aec6894dbeca0dd4b',1,'ReadData']]],
+  ['removeaccents_267',['removeAccents',['../UtilityFunctions_8h.html#add1536dbe9222aff3a1e02bea268fa02',1,'UtilityFunctions.h']]],
+  ['run_268',['run',['../classScript.html#a73a1254b03be5b6150f8029f898615da',1,'Script']]]
 ];

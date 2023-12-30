@@ -1,0 +1,4 @@
+<map id="LeaveUcClassRequest" name="LeaveUcClassRequest">
+<area shape="rect" id="node1" title="A structure to represent a request for a Student to leave a specific UC and Class." alt="" coords="5,95,172,121"/>
+<area shape="rect" id="node2" href="$classStudent.html" title="A class to represent a student." alt="" coords="53,5,125,32"/>
+</map>

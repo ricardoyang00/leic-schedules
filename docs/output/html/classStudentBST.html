@@ -63,6 +63,8 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="classStudentBST-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">StudentBST Class Reference</div>  </div>
@@ -73,6 +75,16 @@ $(function() {
  <a href="classStudentBST.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="Data_8h_source.html">Data.h</a>&gt;</code></p>
+<div class="dynheader">
+Collaboration diagram for StudentBST:</div>
+<div class="dyncontent">
+<div class="center"><img src="classStudentBST__coll__graph.png" border="0" usemap="#aStudentBST_coll__map" alt="Collaboration graph"/></div>
+<map name="aStudentBST_coll__map" id="aStudentBST_coll__map">
+<area shape="rect" title="A class to represent the Binary search tree to store &#39;Student&#39; objects." alt="" coords="5,187,103,213"/>
+<area shape="rect" href="structNode.html" title="A structure representing a binary tree node containing Student data." alt="" coords="26,96,82,123"/>
+<area shape="rect" href="classStudent.html" title="A class to represent a student." alt="" coords="18,5,90,32"/>
+</map>
+<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -118,6 +130,23 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a20d42af8b3368d83b5998e7e5221acee"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classStudentBST.html#a20d42af8b3368d83b5998e7e5221acee">saveToCSV</a> (const string &amp;filename)</td></tr>
 <tr class="memdesc:a20d42af8b3368d83b5998e7e5221acee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Save the student data to a CSV file.  <a href="classStudentBST.html#a20d42af8b3368d83b5998e7e5221acee">More...</a><br /></td></tr>
 <tr class="separator:a20d42af8b3368d83b5998e7e5221acee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:a914ea8ca167de4e7567e17779333a59a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structNode.html">Node</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classStudentBST.html#a914ea8ca167de4e7567e17779333a59a">insertStudent</a> (<a class="el" href="structNode.html">Node</a> *<a class="el" href="classStudentBST.html#a05f3af39191b70f799f630aea1078357">root</a>, const <a class="el" href="classStudent.html">Student</a> &amp;student)</td></tr>
+<tr class="memdesc:a914ea8ca167de4e7567e17779333a59a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Recursive method to insert a student into the BST.  <a href="classStudentBST.html#a914ea8ca167de4e7567e17779333a59a">More...</a><br /></td></tr>
+<tr class="separator:a914ea8ca167de4e7567e17779333a59a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af2f75321026670956e0d88f5609caaf8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classStudent.html">Student</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classStudentBST.html#af2f75321026670956e0d88f5609caaf8">searchByCode</a> (<a class="el" href="structNode.html">Node</a> *<a class="el" href="classStudentBST.html#a05f3af39191b70f799f630aea1078357">root</a>, const int &amp;studentCode)</td></tr>
+<tr class="memdesc:af2f75321026670956e0d88f5609caaf8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Recursively searches for a student with the specified <a class="el" href="classStudent.html" title="A class to represent a student.">Student</a> Code in an in-order traversal of the binary search tree.  <a href="classStudentBST.html#af2f75321026670956e0d88f5609caaf8">More...</a><br /></td></tr>
+<tr class="separator:af2f75321026670956e0d88f5609caaf8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb7ba4fbb9532e95a26685d8cc8310ac"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classStudentBST.html#adb7ba4fbb9532e95a26685d8cc8310ac">inOrderTraversal</a> (<a class="el" href="structNode.html">Node</a> *node, function&lt; void(const <a class="el" href="classStudent.html">Student</a> &amp;)&gt; action)</td></tr>
+<tr class="memdesc:adb7ba4fbb9532e95a26685d8cc8310ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">In-order traversal of the BST with a custom action.  <a href="classStudentBST.html#adb7ba4fbb9532e95a26685d8cc8310ac">More...</a><br /></td></tr>
+<tr class="separator:adb7ba4fbb9532e95a26685d8cc8310ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a05f3af39191b70f799f630aea1078357"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structNode.html">Node</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classStudentBST.html#a05f3af39191b70f799f630aea1078357">root</a></td></tr>
+<tr class="separator:a05f3af39191b70f799f630aea1078357"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A class to represent the Binary search tree to store '<a class="el" href="classStudent.html" title="A class to represent a student.">Student</a>' objects. </p>
@@ -367,8 +396,62 @@ A pointer to the root node of the BST. </dd></dl>
 
 </div>
 </div>
+<a id="adb7ba4fbb9532e95a26685d8cc8310ac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adb7ba4fbb9532e95a26685d8cc8310ac">&#9670;&nbsp;</a></span>inOrderTraversal()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void StudentBST::inOrderTraversal </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structNode.html">Node</a> *&#160;</td>
+          <td class="paramname"><em>node</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">function&lt; void(const <a class="el" href="classStudent.html">Student</a> &amp;)&gt;&#160;</td>
+          <td class="paramname"><em>action</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>In-order traversal of the BST with a custom action. </p>
+<p>Perform an in-order traversal of the Binary Search Tree (BST) starting from the given node and execute a specified action for each node.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">node</td><td>The current node being processed. </td></tr>
+    <tr><td class="paramname">action</td><td>The action to perform on each <a class="el" href="classStudent.html" title="A class to represent a student.">Student</a> object.</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>This function performs an in-order traversal of the BST, visiting nodes in ascending order. For each node, it executes the specified action.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">node</td><td>The current node in the traversal. </td></tr>
+    <tr><td class="paramname">action</td><td>The action to be executed for each node. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a43fb76c2b83660b3687e8c9f09d90f65"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a43fb76c2b83660b3687e8c9f09d90f65">&#9670;&nbsp;</a></span>insertStudent()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a43fb76c2b83660b3687e8c9f09d90f65">&#9670;&nbsp;</a></span>insertStudent() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -418,6 +501,62 @@ A pointer to the root node of the BST. </dd></dl>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="a914ea8ca167de4e7567e17779333a59a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a914ea8ca167de4e7567e17779333a59a">&#9670;&nbsp;</a></span>insertStudent() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structNode.html">Node</a> * StudentBST::insertStudent </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structNode.html">Node</a> *&#160;</td>
+          <td class="paramname"><em>root</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classStudent.html">Student</a> &amp;&#160;</td>
+          <td class="paramname"><em>student</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Recursive method to insert a student into the BST. </p>
+<p>Helper function to insert a student into the Binary Search Tree (BST).</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">root</td><td>The root of the subtree to insert the student into. </td></tr>
+    <tr><td class="paramname">student</td><td>The <a class="el" href="classStudent.html" title="A class to represent a student.">Student</a> object to insert. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The root of the updated subtree.</dd></dl>
+<p>This recursive function inserts a new student into the BST by comparing the student's data with the data in the current node. If the current node is null (the subtree is empty), it creates a new node with the given student and returns it. If the student data is less than the data in the current node, it recursively inserts the student into the left subtree. If the student data is greater, it recursively inserts the student into the right subtree.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">root</td><td>The root node of the current subtree. </td></tr>
+    <tr><td class="paramname">student</td><td>The <a class="el" href="classStudent.html" title="A class to represent a student.">Student</a> object to insert into the BST. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The root of the updated subtree after insertion. </dd></dl>
 
 </div>
 </div>
@@ -502,7 +641,7 @@ A pointer to the root node of the BST. </dd></dl>
 </div>
 </div>
 <a id="a8cb7afd9ae1753e51ffb368142c33283"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8cb7afd9ae1753e51ffb368142c33283">&#9670;&nbsp;</a></span>searchByCode()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a8cb7afd9ae1753e51ffb368142c33283">&#9670;&nbsp;</a></span>searchByCode() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -529,6 +668,63 @@ A pointer to the root node of the BST. </dd></dl>
 <p>This function initiates the search for a student with the given student code by calling the recursive search function and providing the root of the BST.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
+    <tr><td class="paramname">studentCode</td><td>The student code to search for. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A pointer to the <a class="el" href="classStudent.html" title="A class to represent a student.">Student</a> object if found, or nullptr if not found. </dd></dl>
+
+</div>
+</div>
+<a id="af2f75321026670956e0d88f5609caaf8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af2f75321026670956e0d88f5609caaf8">&#9670;&nbsp;</a></span>searchByCode() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classStudent.html">Student</a> * StudentBST::searchByCode </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structNode.html">Node</a> *&#160;</td>
+          <td class="paramname"><em>root</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int &amp;&#160;</td>
+          <td class="paramname"><em>studentCode</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Recursively searches for a student with the specified <a class="el" href="classStudent.html" title="A class to represent a student.">Student</a> Code in an in-order traversal of the binary search tree. </p>
+<p>Search for a student with a specific student code in the BST.</p>
+<p>This method performs an in-order traversal of the binary search tree (BST) and recursively searches for a student whose <a class="el" href="classStudent.html" title="A class to represent a student.">Student</a> Code matches the given code.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">root</td><td>Pointer to the root node of the BST to traverse. </td></tr>
+    <tr><td class="paramname">studentCode</td><td>The <a class="el" href="classStudent.html" title="A class to represent a student.">Student</a> Code to search for. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A pointer to the <a class="el" href="classStudent.html" title="A class to represent a student.">Student</a> object if found; otherwise, returns nullptr.</dd></dl>
+<p>This function recursively searches the BST to find a student with the given student code.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">root</td><td>The root of the current subtree. </td></tr>
     <tr><td class="paramname">studentCode</td><td>The student code to search for. </td></tr>
   </table>
   </dd>
@@ -657,9 +853,33 @@ A pointer to the root node of the BST. </dd></dl>
 
 </div>
 </div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a05f3af39191b70f799f630aea1078357"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a05f3af39191b70f799f630aea1078357">&#9670;&nbsp;</a></span>root</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structNode.html">Node</a>* StudentBST::root</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Pointer to the root of the BST. </p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>/home/chill/Documents/AED2324_PRJ1_G110/code/<a class="el" href="Data_8h_source.html">Data.h</a></li>
-<li>/home/chill/Documents/AED2324_PRJ1_G110/code/<a class="el" href="Data_8cpp.html">Data.cpp</a></li>
+<li>code/<a class="el" href="Data_8h_source.html">Data.h</a></li>
+<li>code/<a class="el" href="Data_8cpp.html">Data.cpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

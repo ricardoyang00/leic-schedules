@@ -9,6 +9,16 @@ A class representing the system and its operations.
 
 {\ttfamily \#include $<$Read\+Data.\+h$>$}
 
+
+
+Collaboration diagram for System\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=179pt]{classSystem__coll__graph}
+\end{center}
+\end{figure}
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
@@ -30,6 +40,21 @@ void \mbox{\hyperlink{classSystem_ac85cda89338f69fa40a96f86c36f4af9}{undo\+Actio
 \begin{DoxyCompactList}\small\item\em Undo the last action by restoring the previous state from the undo stack. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classSystem_a89d86d12fbbaf012ca1a9812d16025ea}{update\+Data}} (\mbox{\hyperlink{structGlobal}{Global}} global)
 \begin{DoxyCompactList}\small\item\em Update the system data with new \mbox{\hyperlink{structGlobal}{Global}} data. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classSystem_a413619e119464115040f933d6dd5ba8b}\label{classSystem_a413619e119464115040f933d6dd5ba8b}} 
+vector$<$ \mbox{\hyperlink{classClass}{Class}} $>$ \mbox{\hyperlink{classSystem_a413619e119464115040f933d6dd5ba8b}{Classes}}
+\begin{DoxyCompactList}\small\item\em A vector of \mbox{\hyperlink{classClass}{Class}} objects. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classSystem_afc8456e6b73e52647e41f16208b33346}\label{classSystem_afc8456e6b73e52647e41f16208b33346}} 
+vector$<$ \mbox{\hyperlink{classSchedule}{Schedule}} $>$ \mbox{\hyperlink{classSystem_afc8456e6b73e52647e41f16208b33346}{Schedules}}
+\begin{DoxyCompactList}\small\item\em A vector of \mbox{\hyperlink{classSchedule}{Schedule}} objects. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classSystem_a5cd63e0f8c17fec1929e55829f9c39fa}\label{classSystem_a5cd63e0f8c17fec1929e55829f9c39fa}} 
+\mbox{\hyperlink{classStudentBST}{Student\+BST}} \mbox{\hyperlink{classSystem_a5cd63e0f8c17fec1929e55829f9c39fa}{Students}}
+\begin{DoxyCompactList}\small\item\em A binary search tree for storing \mbox{\hyperlink{classStudent}{Student}} objects. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classSystem_a84e4072ce8043111840d11512eefbda9}\label{classSystem_a84e4072ce8043111840d11512eefbda9}} 
+stack$<$ \mbox{\hyperlink{classStudentBST}{Student\+BST}} $>$ \mbox{\hyperlink{classSystem_a84e4072ce8043111840d11512eefbda9}{undo\+Stack}}
+\begin{DoxyCompactList}\small\item\em A stack to store previous \mbox{\hyperlink{classStudentBST}{Student\+BST}} states. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
@@ -211,5 +236,5 @@ This function updates the \mbox{\hyperlink{classSystem}{System}}\textquotesingle
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-/home/chill/\+Documents/\+AED2324\+\_\+\+PRJ1\+\_\+\+G110/code/\mbox{\hyperlink{ReadData_8h}{Read\+Data.\+h}}\item 
-/home/chill/\+Documents/\+AED2324\+\_\+\+PRJ1\+\_\+\+G110/code/\mbox{\hyperlink{ReadData_8cpp}{Read\+Data.\+cpp}}\end{DoxyCompactItemize}
+code/\mbox{\hyperlink{ReadData_8h}{Read\+Data.\+h}}\item 
+code/\mbox{\hyperlink{ReadData_8cpp}{Read\+Data.\+cpp}}\end{DoxyCompactItemize}

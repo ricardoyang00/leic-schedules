@@ -1,0 +1,7 @@
+<map id="ReadData" name="ReadData">
+<area shape="rect" id="node1" title="A class responsible for reading and parsing data for the application." alt="" coords="11,365,97,392"/>
+<area shape="rect" id="node2" href="$structGlobal.html" title="A structure to hold Global data for the application." alt="" coords="22,276,86,303"/>
+<area shape="rect" id="node3" href="$classStudentBST.html" title="A class to represent the Binary search tree to store &#39;Student&#39; objects." alt="" coords="5,187,103,213"/>
+<area shape="rect" id="node4" href="$structNode.html" title="A structure representing a binary tree node containing Student data." alt="" coords="26,96,82,123"/>
+<area shape="rect" id="node5" href="$classStudent.html" title="A class to represent a student." alt="" coords="18,5,90,32"/>
+</map>

@@ -1,0 +1,8 @@
+<map id="Change" name="Change">
+<area shape="rect" id="node1" title="A class to manage Student Class changes and Schedule updates." alt="" coords="100,365,171,392"/>
+<area shape="rect" id="node2" href="$structGlobal.html" title="A structure to hold Global data for the application." alt="" coords="22,276,86,303"/>
+<area shape="rect" id="node3" href="$classStudentBST.html" title="A class to represent the Binary search tree to store &#39;Student&#39; objects." alt="" coords="5,187,103,213"/>
+<area shape="rect" id="node4" href="$structNode.html" title="A structure representing a binary tree node containing Student data." alt="" coords="26,96,82,123"/>
+<area shape="rect" id="node5" href="$classStudent.html" title="A class to represent a student." alt="" coords="18,5,90,32"/>
+<area shape="rect" id="node6" href="$structChangeLogEntry.html" title="A structure to represent a change log entry for the application." alt="" coords="110,276,238,303"/>
+</map>

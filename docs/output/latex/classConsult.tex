@@ -12,7 +12,13 @@ A class for consulting \mbox{\hyperlink{classStudent}{Student}} and \mbox{\hyper
 
 
 Collaboration diagram for Consult\+:
-% FIG 0
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=179pt]{classConsult__coll__graph}
+\end{center}
+\end{figure}
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
@@ -64,6 +70,11 @@ void \mbox{\hyperlink{classConsult_ad68a1aa6ad0562910da0c6821f273880}{consult\+Y
 \mbox{\Hypertarget{classConsult_a0228822d0f951122119b915682226ad6}\label{classConsult_a0228822d0f951122119b915682226ad6}} 
 \mbox{\hyperlink{structGlobal}{Global}} {\bfseries global\+Data}
 \end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+set$<$ string $>$ \mbox{\hyperlink{classConsult_a6c6ff079d2d36c6ad496d456247d2cb1}{ucs\+Of\+The\+Year}} (int year)
+\begin{DoxyCompactList}\small\item\em Retrieves a set of UCs for a given year. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
@@ -354,7 +365,33 @@ Shows the sorting menu based on the provided students count and identifier.
 {\em identifier} & The identifier for which to show the sorting menu.\\
 \hline
 \end{DoxyParams}
-@complexity O(\+N log N) \mbox{\Hypertarget{classConsult_a60c71cb1e45be5db7414cb4aad119390}\label{classConsult_a60c71cb1e45be5db7414cb4aad119390}} 
+@complexity O(\+N log N) \mbox{\Hypertarget{classConsult_a6c6ff079d2d36c6ad496d456247d2cb1}\label{classConsult_a6c6ff079d2d36c6ad496d456247d2cb1}} 
+\index{Consult@{Consult}!ucsOfTheYear@{ucsOfTheYear}}
+\index{ucsOfTheYear@{ucsOfTheYear}!Consult@{Consult}}
+\doxysubsubsection{\texorpdfstring{ucsOfTheYear()}{ucsOfTheYear()}}
+{\footnotesize\ttfamily set$<$ string $>$ Consult\+::ucs\+Of\+The\+Year (\begin{DoxyParamCaption}\item[{int}]{year }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Retrieves a set of UCs for a given year. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em year} & The year for which to retrieve UCs. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A set of UC codes for the specified year.
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em year} & The year for which to retrieve UCs. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A set of UC codes for the specified year.
+\end{DoxyReturn}
+@complexity O(\+N) \mbox{\Hypertarget{classConsult_a60c71cb1e45be5db7414cb4aad119390}\label{classConsult_a60c71cb1e45be5db7414cb4aad119390}} 
 \index{Consult@{Consult}!updateData@{updateData}}
 \index{updateData@{updateData}!Consult@{Consult}}
 \doxysubsubsection{\texorpdfstring{updateData()}{updateData()}}
@@ -377,5 +414,5 @@ This function updates the \mbox{\hyperlink{classConsult}{Consult}}\textquotesing
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-/home/chill/\+Documents/\+AED2324\+\_\+\+PRJ1\+\_\+\+G110/code/\mbox{\hyperlink{Consult_8h}{Consult.\+h}}\item 
-/home/chill/\+Documents/\+AED2324\+\_\+\+PRJ1\+\_\+\+G110/code/\mbox{\hyperlink{Consult_8cpp}{Consult.\+cpp}}\end{DoxyCompactItemize}
+code/\mbox{\hyperlink{Consult_8h}{Consult.\+h}}\item 
+code/\mbox{\hyperlink{Consult_8cpp}{Consult.\+cpp}}\end{DoxyCompactItemize}

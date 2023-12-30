@@ -9,6 +9,21 @@ Main \mbox{\hyperlink{classScript}{Script}} for interacting with the \char`\"{}\
 
 {\ttfamily \#include $<$Script.\+h$>$}
 
+
+
+Collaboration diagram for Script\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=255pt]{classScript__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structScript_1_1MenuItem}{Menu\+Item}}
+\end{DoxyCompactItemize}
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
@@ -22,6 +37,104 @@ void \mbox{\hyperlink{classScript_a73a1254b03be5b6150f8029f898615da}{run}} ()
 queue$<$ \mbox{\hyperlink{structChangeRequest}{Change\+Request}} $>$ \mbox{\hyperlink{classScript_a1ae1defd37fd4ba91171e4dce1672dfb}{change\+Request\+Queue}}
 \item 
 vector$<$ \mbox{\hyperlink{structChangeLogEntry}{Change\+Log\+Entry}} $>$ \mbox{\hyperlink{classScript_a08d7941d873a3538d3aa87bb9fb8a915}{change\+Logs}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classScript_adb090f23621dd83ffa0eaa63d920487d}{draw\+Box}} (const string \&text)
+\begin{DoxyCompactList}\small\item\em Draws a box around the given text. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classScript_ad67cf0e9a2a37f6ca11eed2f1464811a}{show\+Menu}} (const string \&menu\+Name, const vector$<$ \mbox{\hyperlink{structScript_1_1MenuItem}{Menu\+Item}} $>$ \&menu\+Items)
+\begin{DoxyCompactList}\small\item\em Displays a menu and returns the user\textquotesingle{}s choice. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classScript_afc503c9f19dedd0ec73370001ee497e2}{clear\+Screen}} ()
+\begin{DoxyCompactList}\small\item\em Clears the console screen. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classScript_a703a0b47eb4b37ce9dc4ac56d0064d56}{action\+Go\+Back}} ()
+\begin{DoxyCompactList}\small\item\em Performs an action to go back within the menu. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classScript_aad92bca1e6622aabec241593e4190384}{back\+To\+Menu}} ()
+\begin{DoxyCompactList}\small\item\em Waits for user confirmation to continue and clears the screen. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classScript_a268d4b85ba87e03c4206e64ce630bdbb}{update\+Data}} (\mbox{\hyperlink{structGlobal}{Global}} \mbox{\hyperlink{classScript_a4f51e37948f965e6b496f558219aa1a7}{global}})
+\begin{DoxyCompactList}\small\item\em Updates the global data and saves the current state. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classScript_a767503455345ce8e6e7496facd7f3937}{undo\+Action}} ()
+\begin{DoxyCompactList}\small\item\em Undoes the last action. Reverts the system to the previous state. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classScript_a80dd72f5761ac525dee094c707e920f5}{search\+Schedule}} ()
+\begin{DoxyCompactList}\small\item\em Displays a submenu for searching and consulting schedules. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classScript_ab2ea6dfb0345a412d13613984ada5df2}{search\+Student}} ()
+\begin{DoxyCompactList}\small\item\em Displays a submenu for searching and consulting student information. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classScript_aa27e0feebadc8656fc1961271b6d1228}{search\+All\+Occupations}} ()
+\begin{DoxyCompactList}\small\item\em Displays a submenu for searching class and UC occupation information. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classScript_ad213a38c092fa6b5f83cc942ebcecd98}{search\+Specific\+Occupation}} ()
+\begin{DoxyCompactList}\small\item\em Displays a submenu for searching specific class and UC occupation information. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classScript_a9a767c9d3b525308cc9435c93f9305ca}{search\+List\+Of\+Students}} ()
+\begin{DoxyCompactList}\small\item\em Displays a submenu for listing students in different contexts. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classScript_a1872ecf115066883b6bc4c9e309d353c}{consult\+The\+Schedule\+Of\+Student}} ()
+\begin{DoxyCompactList}\small\item\em Displays the student schedule. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classScript_acd287f05e312453925f7946ea2657886}{consult\+The\+Schedule\+Of\+Class}} ()
+\begin{DoxyCompactList}\small\item\em Displays the class schedule. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classScript_aff3ae9887e642396dfa53e7197c06048}{find\+Student\+By\+Code}} ()
+\begin{DoxyCompactList}\small\item\em Searches for a student information by student code. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classScript_a613f02c71813802dac088b0554c0368c}{list\+Students\+By\+Name}} ()
+\begin{DoxyCompactList}\small\item\em Searches for a student information by student name. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classScript_a4c4212de46deb18f3d3f470c100cfeb6}{occupation\+Of\+Classes}} ()
+\begin{DoxyCompactList}\small\item\em Displays the occupation of all Classes. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classScript_a85c3227df413578dfca64a81f544a4b0}{occupation\+Of\+Ucs}} ()
+\begin{DoxyCompactList}\small\item\em Displays the occupation of all UCs. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classScript_aca970ee03aa0afd0bff3a08e35a997b8}{occupation\+Of\+Years}} ()
+\begin{DoxyCompactList}\small\item\em Displays the occupation of all Years (1-\/3). \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classScript_a7726e91f712bcd535753ce97b9518e94}{occupation\+Of\+Classes\+Of\+Uc}} ()
+\begin{DoxyCompactList}\small\item\em Displays the occupation of Classes of a UC. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classScript_afa78f4d77dfd37d8df059cf412456bdf}{occupation\+Of\+Ucs\+Of\+Year}} ()
+\begin{DoxyCompactList}\small\item\em Displays the occupation of UCs of a Year. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classScript_a9133436b176b3f328499a8c7c6a585eb}{list\+Of\+Students\+In\+Class}} ()
+\begin{DoxyCompactList}\small\item\em Displays the list of students enrolled in a \mbox{\hyperlink{classClass}{Class}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classScript_ab37cedee4b343182dd5d44b32ffeaf53}{list\+Of\+Students\+In\+Uc}} ()
+\begin{DoxyCompactList}\small\item\em Displays the list of students enrolled in a UC. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classScript_a63031f62d5f773170757b4669cd9428f}{list\+Of\+Students\+In\+Year}} ()
+\begin{DoxyCompactList}\small\item\em Displays the list of students enrolled in a Year. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classScript_aa45d13e18b39460a78e593719067a361}{list\+Of\+Students\+In\+At\+Least\+NUCs}} ()
+\begin{DoxyCompactList}\small\item\em Displays the list of students registered in at least \textquotesingle{}N\textquotesingle{} UCs. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classScript_a727ebc045da501d443302038dad7b19f}{pending\+Request}} (const int \&student\+Code)
+\begin{DoxyCompactList}\small\item\em Displays pending change requests for a specific student and handles cancellation. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classScript_aed28ad570abcd4b5f0cc0bd1d707ad7f}{change\+Class}} ()
+\begin{DoxyCompactList}\small\item\em Initiates the process for changing a student\textquotesingle{}s class. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classScript_a02378a5c7867f683f5bc26afbe511830}{change\+UC}} ()
+\begin{DoxyCompactList}\small\item\em Initiates the process for changing a student\textquotesingle{}s UC. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classScript_aa37a9795a93e45bcf031ed18752ed3ee}{leave\+UCAnd\+Class}} ()
+\begin{DoxyCompactList}\small\item\em Initiates the process for a student to leave a UC and class. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classScript_a2c2388cddc99bffd2a0e40462dc0407a}{join\+UCAnd\+Class}} ()
+\begin{DoxyCompactList}\small\item\em Initiates the process for a student to join a UC and class. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classScript_a22a8c9663941d86a88c275efa2d78644}{swap\+Classes\+Between\+Students}} ()
+\begin{DoxyCompactList}\small\item\em Initiates the process for swapping classes between two students. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classScript_acc1b6b74e5dc1d17eae837cb17260a0f}{process\+Request}} ()
+\begin{DoxyCompactList}\small\item\em Processes a change request from the queue. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classScript_a4e6aae7d49893f33094b408850a9f226}{process\+Next\+Change\+Request}} ()
+\begin{DoxyCompactList}\small\item\em Allows the Administrator to process all change requests in the queue. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classScript_a36f652cb473e7df63574244c4e32e3e9}{process\+All\+Change\+Requests}} ()
+\begin{DoxyCompactList}\small\item\em Allows the Administrator to process the next change request in the queue. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classScript_ab91436bc919381e7aec8331f339b8dd3}{change\+Logs\+Menu}} ()
+\begin{DoxyCompactList}\small\item\em Displays the change logs menu, allowing administrators to view different types of change logs. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classScript_a081543180a8dfc771b363c3b46192541}{all\+Change\+Logs}} ()
+\begin{DoxyCompactList}\small\item\em Displays all change logs, including both successful and unsuccessful changes. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classScript_a72e10ff9ef09882fb4b87bb05410b33d}{successful\+Change\+Logs}} ()
+\begin{DoxyCompactList}\small\item\em Displays successful change logs and provides options for undoing the last change. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classScript_a79aea39ad52ee87cc0e90650615b0231}{failed\+Change\+Logs}} ()
+\begin{DoxyCompactList}\small\item\em Displays unsuccessful (failed) change logs. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classScript_ae647cd19b9c023050f255c2873067b29}{print\+To\+File}} ()
+\begin{DoxyCompactList}\small\item\em Saves the updated student data to a CSV file. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classScript_a1c3a8eb96a045a92a73b883cbe505c8b}\label{classScript_a1c3a8eb96a045a92a73b883cbe505c8b}} 
+\mbox{\hyperlink{classSystem}{System}} \mbox{\hyperlink{classScript_a1c3a8eb96a045a92a73b883cbe505c8b}{system}}
+\begin{DoxyCompactList}\small\item\em The academic system used for data management. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classScript_a4f51e37948f965e6b496f558219aa1a7}\label{classScript_a4f51e37948f965e6b496f558219aa1a7}} 
+\mbox{\hyperlink{structGlobal}{Global}} \mbox{\hyperlink{classScript_a4f51e37948f965e6b496f558219aa1a7}{global}}
+\begin{DoxyCompactList}\small\item\em The global data used by the script. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classScript_a76332fc6df33684d32a71bf7addba6a1}\label{classScript_a76332fc6df33684d32a71bf7addba6a1}} 
+\mbox{\hyperlink{classConsult}{Consult}} \mbox{\hyperlink{classScript_a76332fc6df33684d32a71bf7addba6a1}{consult}}
+\begin{DoxyCompactList}\small\item\em The consultation component for accessing academic data. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classScript_a8add7692e50304d7c58b1ff909c00a82}\label{classScript_a8add7692e50304d7c58b1ff909c00a82}} 
+const string \mbox{\hyperlink{classScript_a8add7692e50304d7c58b1ff909c00a82}{admin\+Password}} = \char`\"{}12345\char`\"{}
+\begin{DoxyCompactList}\small\item\em The administrator\textquotesingle{}s password. \end{DoxyCompactList}\item 
+map$<$ int, bool $>$ \mbox{\hyperlink{classScript_a0ecc1d42ba718801896ab348a36f282f}{student\+Has\+Pending\+Request}}
 \end{DoxyCompactItemize}
 
 
@@ -44,7 +157,380 @@ Constructor for the \mbox{\hyperlink{classScript}{Script}} class. Initializes th
 Constructor for the \mbox{\hyperlink{classScript}{Script}} class. 
 
 \doxysubsection{Member Function Documentation}
-\mbox{\Hypertarget{classScript_a73a1254b03be5b6150f8029f898615da}\label{classScript_a73a1254b03be5b6150f8029f898615da}} 
+\mbox{\Hypertarget{classScript_a703a0b47eb4b37ce9dc4ac56d0064d56}\label{classScript_a703a0b47eb4b37ce9dc4ac56d0064d56}} 
+\index{Script@{Script}!actionGoBack@{actionGoBack}}
+\index{actionGoBack@{actionGoBack}!Script@{Script}}
+\doxysubsubsection{\texorpdfstring{actionGoBack()}{actionGoBack()}}
+{\footnotesize\ttfamily void Script\+::action\+Go\+Back (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Performs an action to go back within the menu. 
+
+Action to go back to the previous menu. \mbox{\Hypertarget{classScript_a081543180a8dfc771b363c3b46192541}\label{classScript_a081543180a8dfc771b363c3b46192541}} 
+\index{Script@{Script}!allChangeLogs@{allChangeLogs}}
+\index{allChangeLogs@{allChangeLogs}!Script@{Script}}
+\doxysubsubsection{\texorpdfstring{allChangeLogs()}{allChangeLogs()}}
+{\footnotesize\ttfamily void Script\+::all\+Change\+Logs (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Displays all change logs, including both successful and unsuccessful changes. 
+
+Display all change logs.
+
+This function displays a list of all change logs, which include information about the requested changes, timestamps, student details, state (accepted or denied), and any additional notes. If there are no logs, it informs the admin accordingly.
+
+This function shows all change logs including accepted and denied requests. \mbox{\Hypertarget{classScript_aad92bca1e6622aabec241593e4190384}\label{classScript_aad92bca1e6622aabec241593e4190384}} 
+\index{Script@{Script}!backToMenu@{backToMenu}}
+\index{backToMenu@{backToMenu}!Script@{Script}}
+\doxysubsubsection{\texorpdfstring{backToMenu()}{backToMenu()}}
+{\footnotesize\ttfamily void Script\+::back\+To\+Menu (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Waits for user confirmation to continue and clears the screen. 
+
+Delay before to go back to the previous menu, forcing user to press any key \mbox{\Hypertarget{classScript_aed28ad570abcd4b5f0cc0bd1d707ad7f}\label{classScript_aed28ad570abcd4b5f0cc0bd1d707ad7f}} 
+\index{Script@{Script}!changeClass@{changeClass}}
+\index{changeClass@{changeClass}!Script@{Script}}
+\doxysubsubsection{\texorpdfstring{changeClass()}{changeClass()}}
+{\footnotesize\ttfamily void Script\+::change\+Class (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Initiates the process for changing a student\textquotesingle{}s class. 
+
+Initiate a request to change a student\textquotesingle{}s class.
+
+This function initiates the process for changing a student\textquotesingle{}s class within a specific UC. It collects the necessary data and adds a change request to the queue for further processing.
+
+This function guides the user through the process of requesting a class change for a student. It provides options for selecting the student and the target class and enqueues the request for admin review.
+
+@complexity O(log N) \mbox{\Hypertarget{classScript_ab91436bc919381e7aec8331f339b8dd3}\label{classScript_ab91436bc919381e7aec8331f339b8dd3}} 
+\index{Script@{Script}!changeLogsMenu@{changeLogsMenu}}
+\index{changeLogsMenu@{changeLogsMenu}!Script@{Script}}
+\doxysubsubsection{\texorpdfstring{changeLogsMenu()}{changeLogsMenu()}}
+{\footnotesize\ttfamily void Script\+::change\+Logs\+Menu (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Displays the change logs menu, allowing administrators to view different types of change logs. 
+
+Manage the change logs menu.
+
+This function presents a menu to the admin, where they can choose to view different types of change logs, such as all change logs, successful change logs, and unsuccessful (failed) change logs. The admin can navigate through these logs and perform actions such as undoing the last change if allowed.
+
+This function presents a submenu to access different types of change logs (all, successful, unsuccessful), and provides the option to go back to the main menu. \mbox{\Hypertarget{classScript_a02378a5c7867f683f5bc26afbe511830}\label{classScript_a02378a5c7867f683f5bc26afbe511830}} 
+\index{Script@{Script}!changeUC@{changeUC}}
+\index{changeUC@{changeUC}!Script@{Script}}
+\doxysubsubsection{\texorpdfstring{changeUC()}{changeUC()}}
+{\footnotesize\ttfamily void Script\+::change\+UC (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Initiates the process for changing a student\textquotesingle{}s UC. 
+
+Initiate a request to change a student\textquotesingle{}s UC.
+
+This function initiates the process for changing a student\textquotesingle{}s UC, including selecting a new UC. It collects the necessary data and adds a change request to the queue for further processing.
+
+This function guides the user through the process of requesting a UC change for a student. It provides options for selecting the student, the current UC, and the target UC, and enqueues the request for admin review.
+
+@complexity O(log N) \mbox{\Hypertarget{classScript_afc503c9f19dedd0ec73370001ee497e2}\label{classScript_afc503c9f19dedd0ec73370001ee497e2}} 
+\index{Script@{Script}!clearScreen@{clearScreen}}
+\index{clearScreen@{clearScreen}!Script@{Script}}
+\doxysubsubsection{\texorpdfstring{clearScreen()}{clearScreen()}}
+{\footnotesize\ttfamily void Script\+::clear\+Screen (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Clears the console screen. 
+
+Clear the screen of the terminal \mbox{\Hypertarget{classScript_acd287f05e312453925f7946ea2657886}\label{classScript_acd287f05e312453925f7946ea2657886}} 
+\index{Script@{Script}!consultTheScheduleOfClass@{consultTheScheduleOfClass}}
+\index{consultTheScheduleOfClass@{consultTheScheduleOfClass}!Script@{Script}}
+\doxysubsubsection{\texorpdfstring{consultTheScheduleOfClass()}{consultTheScheduleOfClass()}}
+{\footnotesize\ttfamily void Script\+::consult\+The\+Schedule\+Of\+Class (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Displays the class schedule. 
+
+Consults and displays the schedule of a specific class.
+
+This function allows users to consult a class\textquotesingle{}s schedule. \mbox{\Hypertarget{classScript_a1872ecf115066883b6bc4c9e309d353c}\label{classScript_a1872ecf115066883b6bc4c9e309d353c}} 
+\index{Script@{Script}!consultTheScheduleOfStudent@{consultTheScheduleOfStudent}}
+\index{consultTheScheduleOfStudent@{consultTheScheduleOfStudent}!Script@{Script}}
+\doxysubsubsection{\texorpdfstring{consultTheScheduleOfStudent()}{consultTheScheduleOfStudent()}}
+{\footnotesize\ttfamily void Script\+::consult\+The\+Schedule\+Of\+Student (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Displays the student schedule. 
+
+Consults and displays the schedule of a specific student.
+
+This function allows users to consult a student\textquotesingle{}s schedule. \mbox{\Hypertarget{classScript_adb090f23621dd83ffa0eaa63d920487d}\label{classScript_adb090f23621dd83ffa0eaa63d920487d}} 
+\index{Script@{Script}!drawBox@{drawBox}}
+\index{drawBox@{drawBox}!Script@{Script}}
+\doxysubsubsection{\texorpdfstring{drawBox()}{drawBox()}}
+{\footnotesize\ttfamily void Script\+::draw\+Box (\begin{DoxyParamCaption}\item[{const string \&}]{text }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Draws a box around the given text. 
+
+Draw a text box with the specified text. 
+\begin{DoxyParams}{Parameters}
+{\em text} & The text to display in the box.\\
+\hline
+{\em text} & The text to display within the box. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classScript_a79aea39ad52ee87cc0e90650615b0231}\label{classScript_a79aea39ad52ee87cc0e90650615b0231}} 
+\index{Script@{Script}!failedChangeLogs@{failedChangeLogs}}
+\index{failedChangeLogs@{failedChangeLogs}!Script@{Script}}
+\doxysubsubsection{\texorpdfstring{failedChangeLogs()}{failedChangeLogs()}}
+{\footnotesize\ttfamily void Script\+::failed\+Change\+Logs (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Displays unsuccessful (failed) change logs. 
+
+Display failed change logs.
+
+This function displays a list of change logs that represent changes that were denied or unsuccessful. It includes information about the requested changes, timestamps, student details, and the reason of why they were denied. If there are no failed change logs, it informs the user accordingly.
+
+This function shows only the unsuccessful change logs, i.\+e., denied requests. \mbox{\Hypertarget{classScript_aff3ae9887e642396dfa53e7197c06048}\label{classScript_aff3ae9887e642396dfa53e7197c06048}} 
+\index{Script@{Script}!findStudentByCode@{findStudentByCode}}
+\index{findStudentByCode@{findStudentByCode}!Script@{Script}}
+\doxysubsubsection{\texorpdfstring{findStudentByCode()}{findStudentByCode()}}
+{\footnotesize\ttfamily void Script\+::find\+Student\+By\+Code (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Searches for a student information by student code. 
+
+Searches for a student by their student code.
+
+Users can search for a student by entering a student code. \mbox{\Hypertarget{classScript_a2c2388cddc99bffd2a0e40462dc0407a}\label{classScript_a2c2388cddc99bffd2a0e40462dc0407a}} 
+\index{Script@{Script}!joinUCAndClass@{joinUCAndClass}}
+\index{joinUCAndClass@{joinUCAndClass}!Script@{Script}}
+\doxysubsubsection{\texorpdfstring{joinUCAndClass()}{joinUCAndClass()}}
+{\footnotesize\ttfamily void Script\+::join\+UCAnd\+Class (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Initiates the process for a student to join a UC and class. 
+
+Initiate a request for a student to join a new UC and class.
+
+This function initiates the process for a student to join a specific UC. It collects the necessary data and adds a change request to the queue for further processing.
+
+This function guides the user through the process of requesting to join a new UC and assigns a suitable class based on the student\textquotesingle{}s schedule and others criteria. It provides options for selecting the student, the new UC to join, and enqueues the request for admin review.
+
+@complexity O(log N) \mbox{\Hypertarget{classScript_aa37a9795a93e45bcf031ed18752ed3ee}\label{classScript_aa37a9795a93e45bcf031ed18752ed3ee}} 
+\index{Script@{Script}!leaveUCAndClass@{leaveUCAndClass}}
+\index{leaveUCAndClass@{leaveUCAndClass}!Script@{Script}}
+\doxysubsubsection{\texorpdfstring{leaveUCAndClass()}{leaveUCAndClass()}}
+{\footnotesize\ttfamily void Script\+::leave\+UCAnd\+Class (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Initiates the process for a student to leave a UC and class. 
+
+Initiate a request for a student to leave a specific UC and class.
+
+This function initiates the process for a student to leave their current UC and class. It collects the necessary data and adds a change request to the queue for further processing.
+
+This function guides the user through the process of requesting to leave a UC and a class for a student. It provides options for selecting the student, the current UC and class to leave, and enqueues the request for admin review.
+
+@complexity O(log N) \mbox{\Hypertarget{classScript_aa45d13e18b39460a78e593719067a361}\label{classScript_aa45d13e18b39460a78e593719067a361}} 
+\index{Script@{Script}!listOfStudentsInAtLeastNUCs@{listOfStudentsInAtLeastNUCs}}
+\index{listOfStudentsInAtLeastNUCs@{listOfStudentsInAtLeastNUCs}!Script@{Script}}
+\doxysubsubsection{\texorpdfstring{listOfStudentsInAtLeastNUCs()}{listOfStudentsInAtLeastNUCs()}}
+{\footnotesize\ttfamily void Script\+::list\+Of\+Students\+In\+At\+Least\+NUCs (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Displays the list of students registered in at least \textquotesingle{}N\textquotesingle{} UCs. 
+
+Lists students registered in at least N UCs. \mbox{\Hypertarget{classScript_a9133436b176b3f328499a8c7c6a585eb}\label{classScript_a9133436b176b3f328499a8c7c6a585eb}} 
+\index{Script@{Script}!listOfStudentsInClass@{listOfStudentsInClass}}
+\index{listOfStudentsInClass@{listOfStudentsInClass}!Script@{Script}}
+\doxysubsubsection{\texorpdfstring{listOfStudentsInClass()}{listOfStudentsInClass()}}
+{\footnotesize\ttfamily void Script\+::list\+Of\+Students\+In\+Class (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Displays the list of students enrolled in a \mbox{\hyperlink{classClass}{Class}}. 
+
+Lists students in a specific class. \mbox{\Hypertarget{classScript_ab37cedee4b343182dd5d44b32ffeaf53}\label{classScript_ab37cedee4b343182dd5d44b32ffeaf53}} 
+\index{Script@{Script}!listOfStudentsInUc@{listOfStudentsInUc}}
+\index{listOfStudentsInUc@{listOfStudentsInUc}!Script@{Script}}
+\doxysubsubsection{\texorpdfstring{listOfStudentsInUc()}{listOfStudentsInUc()}}
+{\footnotesize\ttfamily void Script\+::list\+Of\+Students\+In\+Uc (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Displays the list of students enrolled in a UC. 
+
+Lists students in a specific UC. \mbox{\Hypertarget{classScript_a63031f62d5f773170757b4669cd9428f}\label{classScript_a63031f62d5f773170757b4669cd9428f}} 
+\index{Script@{Script}!listOfStudentsInYear@{listOfStudentsInYear}}
+\index{listOfStudentsInYear@{listOfStudentsInYear}!Script@{Script}}
+\doxysubsubsection{\texorpdfstring{listOfStudentsInYear()}{listOfStudentsInYear()}}
+{\footnotesize\ttfamily void Script\+::list\+Of\+Students\+In\+Year (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Displays the list of students enrolled in a Year. 
+
+Lists students in a specific year. \mbox{\Hypertarget{classScript_a613f02c71813802dac088b0554c0368c}\label{classScript_a613f02c71813802dac088b0554c0368c}} 
+\index{Script@{Script}!listStudentsByName@{listStudentsByName}}
+\index{listStudentsByName@{listStudentsByName}!Script@{Script}}
+\doxysubsubsection{\texorpdfstring{listStudentsByName()}{listStudentsByName()}}
+{\footnotesize\ttfamily void Script\+::list\+Students\+By\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Searches for a student information by student name. 
+
+Lists students based on their names.
+
+Users can search for a student by entering a student name. \mbox{\Hypertarget{classScript_a4c4212de46deb18f3d3f470c100cfeb6}\label{classScript_a4c4212de46deb18f3d3f470c100cfeb6}} 
+\index{Script@{Script}!occupationOfClasses@{occupationOfClasses}}
+\index{occupationOfClasses@{occupationOfClasses}!Script@{Script}}
+\doxysubsubsection{\texorpdfstring{occupationOfClasses()}{occupationOfClasses()}}
+{\footnotesize\ttfamily void Script\+::occupation\+Of\+Classes (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Displays the occupation of all Classes. 
+
+Displays the occupation of every classes. \mbox{\Hypertarget{classScript_a7726e91f712bcd535753ce97b9518e94}\label{classScript_a7726e91f712bcd535753ce97b9518e94}} 
+\index{Script@{Script}!occupationOfClassesOfUc@{occupationOfClassesOfUc}}
+\index{occupationOfClassesOfUc@{occupationOfClassesOfUc}!Script@{Script}}
+\doxysubsubsection{\texorpdfstring{occupationOfClassesOfUc()}{occupationOfClassesOfUc()}}
+{\footnotesize\ttfamily void Script\+::occupation\+Of\+Classes\+Of\+Uc (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Displays the occupation of Classes of a UC. 
+
+Consults the occupation of classes within a specific UC. \mbox{\Hypertarget{classScript_a85c3227df413578dfca64a81f544a4b0}\label{classScript_a85c3227df413578dfca64a81f544a4b0}} 
+\index{Script@{Script}!occupationOfUcs@{occupationOfUcs}}
+\index{occupationOfUcs@{occupationOfUcs}!Script@{Script}}
+\doxysubsubsection{\texorpdfstring{occupationOfUcs()}{occupationOfUcs()}}
+{\footnotesize\ttfamily void Script\+::occupation\+Of\+Ucs (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Displays the occupation of all UCs. 
+
+Displays the occupation of every UCs. \mbox{\Hypertarget{classScript_afa78f4d77dfd37d8df059cf412456bdf}\label{classScript_afa78f4d77dfd37d8df059cf412456bdf}} 
+\index{Script@{Script}!occupationOfUcsOfYear@{occupationOfUcsOfYear}}
+\index{occupationOfUcsOfYear@{occupationOfUcsOfYear}!Script@{Script}}
+\doxysubsubsection{\texorpdfstring{occupationOfUcsOfYear()}{occupationOfUcsOfYear()}}
+{\footnotesize\ttfamily void Script\+::occupation\+Of\+Ucs\+Of\+Year (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Displays the occupation of UCs of a Year. 
+
+Consults the occupation of UCs within a specific year. \mbox{\Hypertarget{classScript_aca970ee03aa0afd0bff3a08e35a997b8}\label{classScript_aca970ee03aa0afd0bff3a08e35a997b8}} 
+\index{Script@{Script}!occupationOfYears@{occupationOfYears}}
+\index{occupationOfYears@{occupationOfYears}!Script@{Script}}
+\doxysubsubsection{\texorpdfstring{occupationOfYears()}{occupationOfYears()}}
+{\footnotesize\ttfamily void Script\+::occupation\+Of\+Years (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Displays the occupation of all Years (1-\/3). 
+
+Displays the occupation of every years. \mbox{\Hypertarget{classScript_a727ebc045da501d443302038dad7b19f}\label{classScript_a727ebc045da501d443302038dad7b19f}} 
+\index{Script@{Script}!pendingRequest@{pendingRequest}}
+\index{pendingRequest@{pendingRequest}!Script@{Script}}
+\doxysubsubsection{\texorpdfstring{pendingRequest()}{pendingRequest()}}
+{\footnotesize\ttfamily void Script\+::pending\+Request (\begin{DoxyParamCaption}\item[{const int \&}]{student\+Code }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Displays pending change requests for a specific student and handles cancellation. 
+
+Displays pending change requests for a specific student and allows for request cancellation.
+
+This function shows the pending change request for a specific student identified by their student code. It allows the user to cancel a pending request.
+
+
+\begin{DoxyParams}{Parameters}
+{\em student\+Code} & The student code for which pending requests should be displayed and managed.\\
+\hline
+\end{DoxyParams}
+This function iterates through pending change requests in the queue and displays the relevant information based on the request type. The student can choose to cancel a request if desired.
+
+
+\begin{DoxyParams}{Parameters}
+{\em student\+Code} & The code of the student for whom pending requests should be displayed. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classScript_ae647cd19b9c023050f255c2873067b29}\label{classScript_ae647cd19b9c023050f255c2873067b29}} 
+\index{Script@{Script}!printToFile@{printToFile}}
+\index{printToFile@{printToFile}!Script@{Script}}
+\doxysubsubsection{\texorpdfstring{printToFile()}{printToFile()}}
+{\footnotesize\ttfamily void Script\+::print\+To\+File (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Saves the updated student data to a CSV file. 
+
+Print updated student data to a file.
+
+This function saves the updated student data to a CSV (Comma-\/\+Separated Values) file named \char`\"{}students\+\_\+updated.\+csv\char`\"{}. It provides feedback to the user, indicating whether the file output was successful.
+
+This function saves the updated student data to a CSV file named \char`\"{}students\+\_\+updated.\+csv\char`\"{} and notifies the user of the successful output. \mbox{\Hypertarget{classScript_a36f652cb473e7df63574244c4e32e3e9}\label{classScript_a36f652cb473e7df63574244c4e32e3e9}} 
+\index{Script@{Script}!processAllChangeRequests@{processAllChangeRequests}}
+\index{processAllChangeRequests@{processAllChangeRequests}!Script@{Script}}
+\doxysubsubsection{\texorpdfstring{processAllChangeRequests()}{processAllChangeRequests()}}
+{\footnotesize\ttfamily void Script\+::process\+All\+Change\+Requests (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Allows the Administrator to process the next change request in the queue. 
+
+Process all change requests in the queue.
+
+This function allows the administrator to process the next change request from the queue, applying the requested change to the student\textquotesingle{}s data. After processing, the request is removed from the queue, and relevant data and change logs are updated. If there are no pending change requests, it informs the admin.
+
+This function processes all change requests in the queue. It then returns to the main menu. \mbox{\Hypertarget{classScript_a4e6aae7d49893f33094b408850a9f226}\label{classScript_a4e6aae7d49893f33094b408850a9f226}} 
+\index{Script@{Script}!processNextChangeRequest@{processNextChangeRequest}}
+\index{processNextChangeRequest@{processNextChangeRequest}!Script@{Script}}
+\doxysubsubsection{\texorpdfstring{processNextChangeRequest()}{processNextChangeRequest()}}
+{\footnotesize\ttfamily void Script\+::process\+Next\+Change\+Request (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Allows the Administrator to process all change requests in the queue. 
+
+Process the next change request in the queue.
+
+This function allows the administrator to process all the change requests from the queue, applying the requested change to the student\textquotesingle{}s data. After processing, the request is removed from the queue, and relevant data and change logs are updated. If there are no pending change requests, it informs the admin.
+
+This function processes the next change request in the queue, if any. It then returns to the main menu. \mbox{\Hypertarget{classScript_acc1b6b74e5dc1d17eae837cb17260a0f}\label{classScript_acc1b6b74e5dc1d17eae837cb17260a0f}} 
+\index{Script@{Script}!processRequest@{processRequest}}
+\index{processRequest@{processRequest}!Script@{Script}}
+\doxysubsubsection{\texorpdfstring{processRequest()}{processRequest()}}
+{\footnotesize\ttfamily void Script\+::process\+Request (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Processes a change request from the queue. 
+
+Process the frontmost change request from the queue.
+
+This function processes the next change request from the queue, applying the requested change to the student\textquotesingle{}s data. After processing, the request is removed from the queue, and relevant data and change logs are updated.
+
+This function dequeues the frontmost change request, processes it according to its type, and updates the system state and logs accordingly. \mbox{\Hypertarget{classScript_a73a1254b03be5b6150f8029f898615da}\label{classScript_a73a1254b03be5b6150f8029f898615da}} 
 \index{Script@{Script}!run@{run}}
 \index{run@{run}!Script@{Script}}
 \doxysubsubsection{\texorpdfstring{run()}{run()}}
@@ -54,7 +540,164 @@ Constructor for the \mbox{\hyperlink{classScript}{Script}} class.
 
 Runs the main execution loop of the program. Displays various menus and handles user input and interactions. 
 
-Run the main script and interact with the user. 
+Run the main script and interact with the user. \mbox{\Hypertarget{classScript_aa27e0feebadc8656fc1961271b6d1228}\label{classScript_aa27e0feebadc8656fc1961271b6d1228}} 
+\index{Script@{Script}!searchAllOccupations@{searchAllOccupations}}
+\index{searchAllOccupations@{searchAllOccupations}!Script@{Script}}
+\doxysubsubsection{\texorpdfstring{searchAllOccupations()}{searchAllOccupations()}}
+{\footnotesize\ttfamily void Script\+::search\+All\+Occupations (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Displays a submenu for searching class and UC occupation information. 
+
+Displays a submenu for searching all Occupations.
+
+This function presents a submenu for searching the occupation information of classes, UCs, and years. Users can choose to view the occupation of classes, UCs, or years, or return to the main menu.
+
+The submenu options are displayed until the user selects to go back to the main menu. \mbox{\Hypertarget{classScript_a9a767c9d3b525308cc9435c93f9305ca}\label{classScript_a9a767c9d3b525308cc9435c93f9305ca}} 
+\index{Script@{Script}!searchListOfStudents@{searchListOfStudents}}
+\index{searchListOfStudents@{searchListOfStudents}!Script@{Script}}
+\doxysubsubsection{\texorpdfstring{searchListOfStudents()}{searchListOfStudents()}}
+{\footnotesize\ttfamily void Script\+::search\+List\+Of\+Students (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Displays a submenu for listing students in different contexts. 
+
+Displays a submenu for searching list of Students.
+
+This function presents a submenu that allows users to list students in various contexts, including classes, UCs, or years. Users can choose to view a list of students in a specific class, UC, or year, or return to the main menu.
+
+The submenu options are displayed until the user selects to go back to the main menu. \mbox{\Hypertarget{classScript_a80dd72f5761ac525dee094c707e920f5}\label{classScript_a80dd72f5761ac525dee094c707e920f5}} 
+\index{Script@{Script}!searchSchedule@{searchSchedule}}
+\index{searchSchedule@{searchSchedule}!Script@{Script}}
+\doxysubsubsection{\texorpdfstring{searchSchedule()}{searchSchedule()}}
+{\footnotesize\ttfamily void Script\+::search\+Schedule (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Displays a submenu for searching and consulting schedules. 
+
+Displays a submenu for searching schedules.
+
+This function presents a submenu for searching and consulting academic schedules, allowing the user to choose between viewing a student\textquotesingle{}s schedule, a class\textquotesingle{}s schedule, or returning to the main menu.
+
+The submenu options are displayed until the user selects to go back to the main menu. \mbox{\Hypertarget{classScript_ad213a38c092fa6b5f83cc942ebcecd98}\label{classScript_ad213a38c092fa6b5f83cc942ebcecd98}} 
+\index{Script@{Script}!searchSpecificOccupation@{searchSpecificOccupation}}
+\index{searchSpecificOccupation@{searchSpecificOccupation}!Script@{Script}}
+\doxysubsubsection{\texorpdfstring{searchSpecificOccupation()}{searchSpecificOccupation()}}
+{\footnotesize\ttfamily void Script\+::search\+Specific\+Occupation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Displays a submenu for searching specific class and UC occupation information. 
+
+Displays a submenu for searching a specific Occupation.
+
+This function presents a submenu for searching the occupation information of classes of a specific UC or UCs of a specific year. Users can choose to view the occupation of classes of a UC, UCs of a year, or return to the main menu.
+
+The submenu options are displayed until the user selects to go back to the main menu. \mbox{\Hypertarget{classScript_ab2ea6dfb0345a412d13613984ada5df2}\label{classScript_ab2ea6dfb0345a412d13613984ada5df2}} 
+\index{Script@{Script}!searchStudent@{searchStudent}}
+\index{searchStudent@{searchStudent}!Script@{Script}}
+\doxysubsubsection{\texorpdfstring{searchStudent()}{searchStudent()}}
+{\footnotesize\ttfamily void Script\+::search\+Student (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Displays a submenu for searching and consulting student information. 
+
+Displays a submenu for searching students.
+
+This function presents a submenu for searching and consulting student information. Users can choose to search for a student by their code or name, or return to the main menu.
+
+The submenu options are displayed until the user selects to go back to the main menu. \mbox{\Hypertarget{classScript_ad67cf0e9a2a37f6ca11eed2f1464811a}\label{classScript_ad67cf0e9a2a37f6ca11eed2f1464811a}} 
+\index{Script@{Script}!showMenu@{showMenu}}
+\index{showMenu@{showMenu}!Script@{Script}}
+\doxysubsubsection{\texorpdfstring{showMenu()}{showMenu()}}
+{\footnotesize\ttfamily int Script\+::show\+Menu (\begin{DoxyParamCaption}\item[{const string \&}]{menu\+Name,  }\item[{const vector$<$ \mbox{\hyperlink{structScript_1_1MenuItem}{Menu\+Item}} $>$ \&}]{menu\+Items }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Displays a menu and returns the user\textquotesingle{}s choice. 
+
+Display a menu with a list of menu items and return the user\textquotesingle{}s choice. 
+\begin{DoxyParams}{Parameters}
+{\em menu\+Name} & The name of the menu. \\
+\hline
+{\em menu\+Items} & A vector of menu items. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The user\textquotesingle{}s choice as an integer.
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em menu\+Name} & The name of the menu. \\
+\hline
+{\em menu\+Items} & The list of menu items. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The user\textquotesingle{}s choice (index) or 0 if invalid. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classScript_a72e10ff9ef09882fb4b87bb05410b33d}\label{classScript_a72e10ff9ef09882fb4b87bb05410b33d}} 
+\index{Script@{Script}!successfulChangeLogs@{successfulChangeLogs}}
+\index{successfulChangeLogs@{successfulChangeLogs}!Script@{Script}}
+\doxysubsubsection{\texorpdfstring{successfulChangeLogs()}{successfulChangeLogs()}}
+{\footnotesize\ttfamily void Script\+::successful\+Change\+Logs (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Displays successful change logs and provides options for undoing the last change. 
+
+Display successful change logs.
+
+This function presents successful change logs, which include accepted changes, to the user. It allows the admin to undo the last change if they choose to. The function also provides an option to go back to the previous menu.
+
+This function shows only the successful change logs, i.\+e., accepted requests, and provides options to undo the last change. \mbox{\Hypertarget{classScript_a22a8c9663941d86a88c275efa2d78644}\label{classScript_a22a8c9663941d86a88c275efa2d78644}} 
+\index{Script@{Script}!swapClassesBetweenStudents@{swapClassesBetweenStudents}}
+\index{swapClassesBetweenStudents@{swapClassesBetweenStudents}!Script@{Script}}
+\doxysubsubsection{\texorpdfstring{swapClassesBetweenStudents()}{swapClassesBetweenStudents()}}
+{\footnotesize\ttfamily void Script\+::swap\+Classes\+Between\+Students (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Initiates the process for swapping classes between two students. 
+
+Initiate a request for two students to swap classes within the same UC.
+
+This function initiates the process for swapping classes between two students within the same UC. It collects the necessary data and adds a change request to the queue for further processing.
+
+This function guides the user through the process of requesting a class swap between two students who share at least one UC. It verifies the eligibility for a class swap and enqueues the request for admin review.
+
+@complexity O(log N) \mbox{\Hypertarget{classScript_a767503455345ce8e6e7496facd7f3937}\label{classScript_a767503455345ce8e6e7496facd7f3937}} 
+\index{Script@{Script}!undoAction@{undoAction}}
+\index{undoAction@{undoAction}!Script@{Script}}
+\doxysubsubsection{\texorpdfstring{undoAction()}{undoAction()}}
+{\footnotesize\ttfamily void Script\+::undo\+Action (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Undoes the last action. Reverts the system to the previous state. 
+
+Undo the last succeed change. \mbox{\Hypertarget{classScript_a268d4b85ba87e03c4206e64ce630bdbb}\label{classScript_a268d4b85ba87e03c4206e64ce630bdbb}} 
+\index{Script@{Script}!updateData@{updateData}}
+\index{updateData@{updateData}!Script@{Script}}
+\doxysubsubsection{\texorpdfstring{updateData()}{updateData()}}
+{\footnotesize\ttfamily void Script\+::update\+Data (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structGlobal}{Global}}}]{global }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Updates the global data and saves the current state. 
+
+Update the global data with the provided data. 
+\begin{DoxyParams}{Parameters}
+{\em global} & The global data to update with.\\
+\hline
+{\em global} & The global data to update with. \\
+\hline
+\end{DoxyParams}
+
 
 \doxysubsection{Member Data Documentation}
 \mbox{\Hypertarget{classScript_a08d7941d873a3538d3aa87bb9fb8a915}\label{classScript_a08d7941d873a3538d3aa87bb9fb8a915}} 
@@ -69,9 +712,15 @@ List of All change request log \mbox{\Hypertarget{classScript_a1ae1defd37fd4ba91
 \doxysubsubsection{\texorpdfstring{changeRequestQueue}{changeRequestQueue}}
 {\footnotesize\ttfamily queue$<$\mbox{\hyperlink{structChangeRequest}{Change\+Request}}$>$ Script\+::change\+Request\+Queue}
 
-Queue of change requests waiting to be processed. 
+Queue of change requests waiting to be processed. \mbox{\Hypertarget{classScript_a0ecc1d42ba718801896ab348a36f282f}\label{classScript_a0ecc1d42ba718801896ab348a36f282f}} 
+\index{Script@{Script}!studentHasPendingRequest@{studentHasPendingRequest}}
+\index{studentHasPendingRequest@{studentHasPendingRequest}!Script@{Script}}
+\doxysubsubsection{\texorpdfstring{studentHasPendingRequest}{studentHasPendingRequest}}
+{\footnotesize\ttfamily map$<$int, bool$>$ Script\+::student\+Has\+Pending\+Request\hspace{0.3cm}{\ttfamily [private]}}
+
+A map to keep track of students with pending change requests. The key is the student code, and the value is a boolean indicating if a request is pending. 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-/home/chill/\+Documents/\+AED2324\+\_\+\+PRJ1\+\_\+\+G110/code/\mbox{\hyperlink{Script_8h}{Script.\+h}}\item 
-/home/chill/\+Documents/\+AED2324\+\_\+\+PRJ1\+\_\+\+G110/code/\mbox{\hyperlink{Script_8cpp}{Script.\+cpp}}\end{DoxyCompactItemize}
+code/\mbox{\hyperlink{Script_8h}{Script.\+h}}\item 
+code/\mbox{\hyperlink{Script_8cpp}{Script.\+cpp}}\end{DoxyCompactItemize}

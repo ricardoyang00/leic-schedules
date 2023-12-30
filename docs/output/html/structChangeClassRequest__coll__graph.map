@@ -1,0 +1,4 @@
+<map id="ChangeClassRequest" name="ChangeClassRequest">
+<area shape="rect" id="node1" title="A structure to represent a request to Change a Student&#39;s Class." alt="" coords="5,95,164,121"/>
+<area shape="rect" id="node2" href="$classStudent.html" title="A class to represent a student." alt="" coords="49,5,121,32"/>
+</map>

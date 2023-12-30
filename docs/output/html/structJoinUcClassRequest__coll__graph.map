@@ -1,0 +1,4 @@
+<map id="JoinUcClassRequest" name="JoinUcClassRequest">
+<area shape="rect" id="node1" title="A structure to represent a request for a Student to join a specific UC and Class." alt="" coords="5,95,156,121"/>
+<area shape="rect" id="node2" href="$classStudent.html" title="A class to represent a student." alt="" coords="45,5,117,32"/>
+</map>

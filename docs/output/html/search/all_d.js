@@ -1,15 +1,9 @@
 var searchData=
 [
-  ['readclasses_74',['ReadClasses',['../classReadData.html#a3c0a5d1af54c3e7d16151fcc522bb834',1,'ReadData']]],
-  ['readdata_75',['ReadData',['../classReadData.html',1,'ReadData'],['../classReadData.html#abdc3a24ea2bfab9690d0dd9fde90542e',1,'ReadData::ReadData()']]],
-  ['readdata_2ecpp_76',['ReadData.cpp',['../ReadData_8cpp.html',1,'']]],
-  ['readdata_2eh_77',['ReadData.h',['../ReadData_8h.html',1,'']]],
-  ['readschedules_78',['ReadSchedules',['../classReadData.html#a7174dafe631504a768f780484da4387f',1,'ReadData']]],
-  ['readstudents_79',['ReadStudents',['../classReadData.html#a16d3fa00c32b8d7aec6894dbeca0dd4b',1,'ReadData']]],
-  ['removeaccents_80',['removeAccents',['../UtilityFunctions_8h.html#add1536dbe9222aff3a1e02bea268fa02',1,'UtilityFunctions.h']]],
-  ['requestdata_81',['requestData',['../structChangeRequest.html#a59c41d31b6989d0fdc43a22988f94340',1,'ChangeRequest']]],
-  ['requesttype_82',['requestType',['../structChangeLogEntry.html#a3ef0110b2af2ade998c8df206ad5fac7',1,'ChangeLogEntry::requestType()'],['../structChangeRequest.html#a55a7a0a015bb89d45d87e5fa12346a51',1,'ChangeRequest::requestType()']]],
-  ['right_83',['right',['../structNode.html#a7328862eaa6dea28018326549b3294d3',1,'Node']]],
-  ['run_84',['run',['../classScript.html#a73a1254b03be5b6150f8029f898615da',1,'Script']]],
-  ['runscript_2ecpp_85',['runscript.cpp',['../runscript_8cpp.html',1,'']]]
+  ['pendingrequest_91',['pendingRequest',['../classScript.html#a727ebc045da501d443302038dad7b19f',1,'Script']]],
+  ['printschedule_92',['printSchedule',['../classConsult.html#a06343996e228fef8590cdd413afcb216',1,'Consult']]],
+  ['printtofile_93',['printToFile',['../classScript.html#ae647cd19b9c023050f255c2873067b29',1,'Script']]],
+  ['processallchangerequests_94',['processAllChangeRequests',['../classScript.html#a36f652cb473e7df63574244c4e32e3e9',1,'Script']]],
+  ['processnextchangerequest_95',['processNextChangeRequest',['../classScript.html#a4e6aae7d49893f33094b408850a9f226',1,'Script']]],
+  ['processrequest_96',['processRequest',['../classScript.html#acc1b6b74e5dc1d17eae837cb17260a0f',1,'Script']]]
 ];

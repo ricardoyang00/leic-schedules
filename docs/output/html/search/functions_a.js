@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['printschedule_207',['printSchedule',['../classConsult.html#a06343996e228fef8590cdd413afcb216',1,'Consult']]]
+  ['node_246',['Node',['../structNode.html#a5fc1f0716767571642d5a1d863c6444e',1,'Node']]]
 ];

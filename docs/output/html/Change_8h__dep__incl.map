@@ -1,0 +1,7 @@
+<map id="code/Change.h" name="code/Change.h">
+<area shape="rect" id="node1" title="Header file for the Change class." alt="" coords="85,5,203,32"/>
+<area shape="rect" id="node2" href="$Change_8cpp.html" title="Implementation of the Change class that handles student class and UC changes." alt="" coords="5,80,139,107"/>
+<area shape="rect" id="node3" href="$Script_8h.html" title="Defines the Script class for interacting with the &quot;LEIC Schedules&quot; system." alt="" coords="163,80,269,107"/>
+<area shape="rect" id="node4" href="$runscript_8cpp.html" title="A simple C++ program that initializes a Script instance and runs it." alt="" coords="67,155,208,181"/>
+<area shape="rect" id="node5" href="$Script_8cpp.html" title="Implementation of the Script class methods." alt="" coords="233,155,354,181"/>
+</map>

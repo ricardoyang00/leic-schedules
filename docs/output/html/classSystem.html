@@ -63,6 +63,7 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="classSystem-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">System Class Reference</div>  </div>
@@ -73,6 +74,17 @@ $(function() {
  <a href="classSystem.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="ReadData_8h_source.html">ReadData.h</a>&gt;</code></p>
+<div class="dynheader">
+Collaboration diagram for System:</div>
+<div class="dyncontent">
+<div class="center"><img src="classSystem__coll__graph.png" border="0" usemap="#aSystem_coll__map" alt="Collaboration graph"/></div>
+<map name="aSystem_coll__map" id="aSystem_coll__map">
+<area shape="rect" title="A class representing the system and its operations." alt="" coords="19,276,89,303"/>
+<area shape="rect" href="classStudentBST.html" title="A class to represent the Binary search tree to store &#39;Student&#39; objects." alt="" coords="5,187,103,213"/>
+<area shape="rect" href="structNode.html" title="A structure representing a binary tree node containing Student data." alt="" coords="26,96,82,123"/>
+<area shape="rect" href="classStudent.html" title="A class to represent a student." alt="" coords="18,5,90,32"/>
+</map>
+<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -103,6 +115,25 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a89d86d12fbbaf012ca1a9812d16025ea"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSystem.html#a89d86d12fbbaf012ca1a9812d16025ea">updateData</a> (<a class="el" href="structGlobal.html">Global</a> global)</td></tr>
 <tr class="memdesc:a89d86d12fbbaf012ca1a9812d16025ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update the system data with new <a class="el" href="structGlobal.html" title="A structure to hold Global data for the application.">Global</a> data.  <a href="classSystem.html#a89d86d12fbbaf012ca1a9812d16025ea">More...</a><br /></td></tr>
 <tr class="separator:a89d86d12fbbaf012ca1a9812d16025ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a413619e119464115040f933d6dd5ba8b"><td class="memItemLeft" align="right" valign="top"><a id="a413619e119464115040f933d6dd5ba8b"></a>
+vector&lt; <a class="el" href="classClass.html">Class</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSystem.html#a413619e119464115040f933d6dd5ba8b">Classes</a></td></tr>
+<tr class="memdesc:a413619e119464115040f933d6dd5ba8b"><td class="mdescLeft">&#160;</td><td class="mdescRight">A vector of <a class="el" href="classClass.html" title="A class to represent a course Class.">Class</a> objects. <br /></td></tr>
+<tr class="separator:a413619e119464115040f933d6dd5ba8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afc8456e6b73e52647e41f16208b33346"><td class="memItemLeft" align="right" valign="top"><a id="afc8456e6b73e52647e41f16208b33346"></a>
+vector&lt; <a class="el" href="classSchedule.html">Schedule</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSystem.html#afc8456e6b73e52647e41f16208b33346">Schedules</a></td></tr>
+<tr class="memdesc:afc8456e6b73e52647e41f16208b33346"><td class="mdescLeft">&#160;</td><td class="mdescRight">A vector of <a class="el" href="classSchedule.html" title="A class to represent the schedule of a class for a course unit.">Schedule</a> objects. <br /></td></tr>
+<tr class="separator:afc8456e6b73e52647e41f16208b33346"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5cd63e0f8c17fec1929e55829f9c39fa"><td class="memItemLeft" align="right" valign="top"><a id="a5cd63e0f8c17fec1929e55829f9c39fa"></a>
+<a class="el" href="classStudentBST.html">StudentBST</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSystem.html#a5cd63e0f8c17fec1929e55829f9c39fa">Students</a></td></tr>
+<tr class="memdesc:a5cd63e0f8c17fec1929e55829f9c39fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">A binary search tree for storing <a class="el" href="classStudent.html" title="A class to represent a student.">Student</a> objects. <br /></td></tr>
+<tr class="separator:a5cd63e0f8c17fec1929e55829f9c39fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a84e4072ce8043111840d11512eefbda9"><td class="memItemLeft" align="right" valign="top"><a id="a84e4072ce8043111840d11512eefbda9"></a>
+stack&lt; <a class="el" href="classStudentBST.html">StudentBST</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSystem.html#a84e4072ce8043111840d11512eefbda9">undoStack</a></td></tr>
+<tr class="memdesc:a84e4072ce8043111840d11512eefbda9"><td class="mdescLeft">&#160;</td><td class="mdescRight">A stack to store previous <a class="el" href="classStudentBST.html" title="A class to represent the Binary search tree to store &#39;Student&#39; objects.">StudentBST</a> states. <br /></td></tr>
+<tr class="separator:a84e4072ce8043111840d11512eefbda9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A class representing the system and its operations. </p>
@@ -353,8 +384,8 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>/home/chill/Documents/AED2324_PRJ1_G110/code/<a class="el" href="ReadData_8h_source.html">ReadData.h</a></li>
-<li>/home/chill/Documents/AED2324_PRJ1_G110/code/<a class="el" href="ReadData_8cpp.html">ReadData.cpp</a></li>
+<li>code/<a class="el" href="ReadData_8h_source.html">ReadData.h</a></li>
+<li>code/<a class="el" href="ReadData_8cpp.html">ReadData.cpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

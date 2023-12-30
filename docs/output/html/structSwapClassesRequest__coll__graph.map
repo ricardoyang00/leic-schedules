@@ -1,0 +1,4 @@
+<map id="SwapClassesRequest" name="SwapClassesRequest">
+<area shape="rect" id="node1" title="A structure to represent a request for two Students to swap Classes within the same UC." alt="" coords="5,109,165,136"/>
+<area shape="rect" id="node2" href="$classStudent.html" title="A class to represent a student." alt="" coords="49,5,121,32"/>
+</map>
