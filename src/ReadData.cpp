@@ -9,9 +9,9 @@
  * @brief Initializes the ReadData class by reading data from CSV files.
  */
 ReadData::ReadData(){
-    global = {ReadClasses("input/classes_per_uc.csv"),
-              ReadSchedules("input/classes.csv"),
-              ReadStudents("input/students_classes.csv")};
+    global = {ReadClasses("data/classes_per_uc.csv"),
+              ReadSchedules("data/classes.csv"),
+              ReadStudents("data/students_classes.csv")};
 }
 
 /**
