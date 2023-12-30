@@ -11,7 +11,7 @@ PROGRAMS = run
 DOXYGEN_CONFIG = docs/Doxyfile
 
 # Target directory for Doxygen documentation
-DOXYGEN_OUTPUT_DIR = docs/output
+DOXYGEN_OUTPUT_DIR = ../docs/output
 
 # Target for Doxygen documentation
 DOXYGEN_TARGET = $(DOXYGEN_OUTPUT_DIR)/html/index.html
