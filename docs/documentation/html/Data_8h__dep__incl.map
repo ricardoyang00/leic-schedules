@@ -1,13 +1,13 @@
-<map id="code/Data.h" name="code/Data.h">
-<area shape="rect" id="node1" title="Header file containing class definitions for Class, Schedule, Student, and StudentBST." alt="" coords="91,5,191,32"/>
-<area shape="rect" id="node2" href="$Data_8cpp.html" title="Implementation of the classes and functions defined in Data.h." alt="" coords="11,80,125,107"/>
-<area shape="rect" id="node3" href="$ReadData_8h.html" title="Header file containing class definitions for ReadData and System, as well as related data structures." alt="" coords="149,80,283,107"/>
-<area shape="rect" id="node4" href="$Change_8h.html" title="Header file for the Change class." alt="" coords="59,229,178,256"/>
-<area shape="rect" id="node9" href="$Consult_8h.html" title="Header file containing class definitions for Consult." alt="" coords="157,155,275,181"/>
-<area shape="rect" id="node11" href="$ReadData_8cpp.html" title="Implementation of the classes and functions defined in ReadData.h." alt="" coords="299,155,447,181"/>
-<area shape="rect" id="node5" href="$Change_8cpp.html" title="Implementation of the Change class that handles student class and UC changes." alt="" coords="5,304,139,331"/>
-<area shape="rect" id="node6" href="$Script_8h.html" title="Defines the Script class for interacting with the &quot;LEIC Schedules&quot; system." alt="" coords="163,304,269,331"/>
-<area shape="rect" id="node7" href="$runscript_8cpp.html" title="A simple C++ program that initializes a Script instance and runs it." alt="" coords="68,379,209,405"/>
-<area shape="rect" id="node8" href="$Script_8cpp.html" title="Implementation of the Script class methods." alt="" coords="234,379,355,405"/>
-<area shape="rect" id="node10" href="$Consult_8cpp.html" title="Implementation of the classes and functions defined in Consult.h." alt="" coords="253,229,387,256"/>
+<map id="src/Data.h" name="src/Data.h">
+<area shape="rect" id="node1" title="Header file containing class definitions for Class, Schedule, Student, and StudentBST." alt="" coords="86,5,174,32"/>
+<area shape="rect" id="node2" href="$Data_8cpp.html" title="Implementation of the classes and functions defined in Data.h." alt="" coords="11,80,113,107"/>
+<area shape="rect" id="node3" href="$ReadData_8h.html" title="Header file containing class definitions for ReadData and System, as well as related data structures." alt="" coords="137,80,259,107"/>
+<area shape="rect" id="node4" href="$Change_8h.html" title="Header file for the Change class." alt="" coords="54,229,161,256"/>
+<area shape="rect" id="node9" href="$Consult_8h.html" title="Header file containing class definitions for Consult." alt="" coords="145,155,251,181"/>
+<area shape="rect" id="node11" href="$ReadData_8cpp.html" title="Implementation of the classes and functions defined in ReadData.h." alt="" coords="275,155,411,181"/>
+<area shape="rect" id="node5" href="$Change_8cpp.html" title="Implementation of the Change class that handles student class and UC changes." alt="" coords="5,304,127,331"/>
+<area shape="rect" id="node6" href="$Script_8h.html" title="Defines the Script class for interacting with the &quot;LEIC Schedules&quot; system." alt="" coords="151,304,245,331"/>
+<area shape="rect" id="node7" href="$runscript_8cpp.html" title="A simple C++ program that initializes a Script instance and runs it." alt="" coords="61,379,191,405"/>
+<area shape="rect" id="node8" href="$Script_8cpp.html" title="Implementation of the Script class methods." alt="" coords="215,379,325,405"/>
+<area shape="rect" id="node10" href="$Consult_8cpp.html" title="Implementation of the classes and functions defined in Consult.h." alt="" coords="236,229,357,256"/>
 </map>

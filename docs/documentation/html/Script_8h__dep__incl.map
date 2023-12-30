@@ -1,5 +1,5 @@
-<map id="code/Script.h" name="code/Script.h">
-<area shape="rect" id="node1" title="Defines the Script class for interacting with the &quot;LEIC Schedules&quot; system." alt="" coords="100,5,207,32"/>
-<area shape="rect" id="node2" href="$runscript_8cpp.html" title="A simple C++ program that initializes a Script instance and runs it." alt="" coords="5,80,147,107"/>
-<area shape="rect" id="node3" href="$Script_8cpp.html" title="Implementation of the Script class methods." alt="" coords="171,80,293,107"/>
+<map id="src/Script.h" name="src/Script.h">
+<area shape="rect" id="node1" title="Defines the Script class for interacting with the &quot;LEIC Schedules&quot; system." alt="" coords="95,5,189,32"/>
+<area shape="rect" id="node2" href="$runscript_8cpp.html" title="A simple C++ program that initializes a Script instance and runs it." alt="" coords="5,80,135,107"/>
+<area shape="rect" id="node3" href="$Script_8cpp.html" title="Implementation of the Script class methods." alt="" coords="159,80,269,107"/>
 </map>

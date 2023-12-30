@@ -1,5 +1,5 @@
-<map id="code/ReadData.h" name="code/ReadData.h">
-<area shape="rect" id="node1" title="Header file containing class definitions for ReadData and System, as well as related data structures." alt="" coords="536,5,669,32"/>
+<map id="src/ReadData.h" name="src/ReadData.h">
+<area shape="rect" id="node1" title="Header file containing class definitions for ReadData and System, as well as related data structures." alt="" coords="542,5,663,32"/>
 <area shape="rect" id="node2" href="$Data_8h.html" title="Header file containing class definitions for Class, Schedule, Student, and StudentBST." alt="" coords="535,80,601,107"/>
 <area shape="rect" id="node3" href="$UtilityFunctions_8h.html" title="This file contains utility functions for string and data manipulation." alt="" coords="165,155,301,181"/>
 <area shape="rect" id="node8" title=" " alt="" coords="5,229,80,256"/>

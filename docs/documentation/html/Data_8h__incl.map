@@ -1,5 +1,5 @@
-<map id="code/Data.h" name="code/Data.h">
-<area shape="rect" id="node1" title="Header file containing class definitions for Class, Schedule, Student, and StudentBST." alt="" coords="547,5,647,32"/>
+<map id="src/Data.h" name="src/Data.h">
+<area shape="rect" id="node1" title="Header file containing class definitions for Class, Schedule, Student, and StudentBST." alt="" coords="553,5,641,32"/>
 <area shape="rect" id="node2" href="$UtilityFunctions_8h.html" title="This file contains utility functions for string and data manipulation." alt="" coords="245,80,381,107"/>
 <area shape="rect" id="node4" title=" " alt="" coords="5,155,64,181"/>
 <area shape="rect" id="node6" title=" " alt="" coords="376,155,461,181"/>

@@ -1,5 +1,5 @@
-<map id="code/Change.h" name="code/Change.h">
-<area shape="rect" id="node1" title="Header file for the Change class." alt="" coords="543,5,662,32"/>
+<map id="src/Change.h" name="src/Change.h">
+<area shape="rect" id="node1" title="Header file for the Change class." alt="" coords="549,5,656,32"/>
 <area shape="rect" id="node2" href="$ReadData_8h.html" title="Header file containing class definitions for ReadData and System, as well as related data structures." alt="" coords="553,155,652,181"/>
 <area shape="rect" id="node19" href="$Consult_8h.html" title="Header file containing class definitions for Consult." alt="" coords="601,80,684,107"/>
 <area shape="rect" id="node3" href="$Data_8h.html" title="Header file containing class definitions for Class, Schedule, Student, and StudentBST." alt="" coords="535,229,601,256"/>
