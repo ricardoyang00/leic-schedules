@@ -1433,7 +1433,7 @@ void Script::failedChangeLogs() {
  * This function saves the updated student data to a CSV file named "students_updated.csv" and notifies the user of the successful output.
  */
 void Script::printToFile() {
-    global.Students.saveToCSV("students_updated.csv");
+    global.Students.saveToCSV("output/students_updated.csv");
     cout << "File \"students_updated.csv\" outputted successful" << endl;
     backToMenu();
 }
