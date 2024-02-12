@@ -14,7 +14,7 @@ and interact with course information seamlessly.
 - **Various Searches:** Utilize various search functionalities to find schedules, students, and class occupations easily.
 - **Request System:** Allow students to request changes, join, or leave classes and course units, with administrative approval required for these actions.
 
-## Installing
+## Installation
 To build the program code using **makefile**:
 
 1. Clone the repository:
