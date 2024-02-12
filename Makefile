@@ -1,5 +1,6 @@
 # Set g++ as the C++ compiler
 CXX = g++
+CXXFLAGS = -std=c++17
 
 # C++ source files to consider in compilation for all programs
 COMMON_CPP_FILES = src/Data.cpp src/ReadData.cpp src/UtilityFunctions.cpp src/Consult.cpp src/Script.cpp src/Change.cpp
@@ -20,7 +21,7 @@ DOXYGEN_TARGET = $(DOXYGEN_OUTPUT_DIR)/html/index.html
 all: $(PROGRAMS)
 
 run: $(COMMON_CPP_FILES) src/runscript.cpp
-	$(CXX) -o run src/runscript.cpp $(COMMON_CPP_FILES)
+	$(CXX) $(CXXFLAGS) -o run src/runscript.cpp $(COMMON_CPP_FILES)
 
 doxygen: $(DOXYGEN_CONFIG)
 	doxygen $<
