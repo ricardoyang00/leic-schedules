@@ -2,7 +2,7 @@
 ### AED 2023/24 - Project 01, Group G110
 
 ## Overview
-> Welcome to our L.EIC Schedule Manager! This system is designed to efficiently manage schedules, 
+Welcome to our L.EIC Schedule Manager! This system is designed to efficiently manage schedules, 
 classes, and course-related data for the L.EIC course at the Faculty of Engineering of the University 
 of Porto (FEUP). It provides a comprehensive solution for students and instructors to access, organize, 
 and interact with course information seamlessly.
