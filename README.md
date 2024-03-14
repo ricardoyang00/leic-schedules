@@ -19,8 +19,8 @@ To build the program code using **makefile**:
 
 1. Clone the repository:
 ```bash
-$ git clone git@github.com:ricardoyang00/feup-aed-01.git
-$ cd feup-aed-01/
+$ git clone git@github.com:ricardoyang00/leic-schedules.git
+$ cd leic-schedules/
 ```
 
 2. Build the program using make:
